@@ -16,7 +16,7 @@
 		<h1 class="is-size-3-desktop is-size-5-tablet has-text-centered">MGCG il luogo dove trovi tutto</h1>
 	</div>
 	
-	<img class="cropped" alt="BIG PHOTO OF STORE" src="resources/images/screenlogo.jpg">
+	<img class="cropped" alt="BIG PHOTO OF STORE" src="resources/images/home.jpg">
 	
 	<div>
 		<video autoplay="" muted="" loop="" playsinline="">
