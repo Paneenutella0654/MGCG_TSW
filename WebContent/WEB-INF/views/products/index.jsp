@@ -43,7 +43,7 @@
 			          <h1 class="title">${bean.getName()}</h1>
 			          <p class="subtitle">Aggiungi al carello</p>
 			        </div>
-			        <div id="productremove_${bean.getId()}" class="product-remove"><i class="material-icons">Pulisci</i></div>
+			        <div id="productremove_${bean.getId()}" class="product-remove"><i class="material-icons">clear</i></div>
 			      </div>
 			    </div>
 			  </div>
