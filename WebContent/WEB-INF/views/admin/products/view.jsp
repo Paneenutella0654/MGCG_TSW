@@ -27,11 +27,11 @@
 				</div>
 	
 				<div class="product-action mt-4">
-					<a href="<c:url value="/Admin/Products?action=edit&id=${prod.getId()}"/>" class="btn btn-primary mb-2">Edit</a>
+					<a href="<c:url value="/Admin/Products?action=edit&id=${prod.getId()}"/>" class="btn btn-primary mb-2">Modifica</a>
 					<form action="<c:url value="/Admin/Products"/>" method="post">
 		    			<input type="hidden" name="action" id="action" value="delete">
 		    			<input type="hidden" name="id" id="id" value="${prod.getId()}">
-		    			<button class="btn btn-danger mt-2" style="width: 100%">Delete</button>
+		    			<button class="btn btn-danger mt-2" style="width: 100%">Elimina</button>
 	    			</form>
 				</div>
 			</div>
@@ -53,7 +53,7 @@
 					<c:if test="${review.getReply() != null}">
 						<hr>
 						<div class="rev-reply">
-							<em>BeFloral replied:</em>
+							<em>Mgcg ha risposto:</em>
 							<p>${review.getReply() }</p>
 						</div>
 					</c:if>	

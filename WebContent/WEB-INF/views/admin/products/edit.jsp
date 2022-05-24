@@ -8,45 +8,45 @@
 		<input type="hidden" name="id" id="id" value="${bean.getId()}" required>
 		<input type="hidden" name="action" value="put">
 		<div class="form-group">
-			<label for="name">Name</label>
+			<label for="name">Nome</label>
 			<input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp"
 				value="${bean.getName()}">
-			<small id="nameHelp" class="form-text text-muted">Enter a descriptive small name</small>
+			<small id="nameHelp" class="form-text text-muted">Immettere un nome descrittivo piccolo</small>
 		</div>
 
 		<div class="form-group">
-			<label for="description">Description</label>
+			<label for="description">Descrizione</label>
 			<input type="text" class="form-control" name="description" id="description"
-				aria-describedby="descriptionHelp" placeholder="Enter Product Description"
+				aria-describedby="descriptionHelp" placeholder="Inserisci una descrizione per il prodotto"
 				value="${bean.getDescription()}">
-			<small id="descriptionHelp" class="form-text text-muted">Enter a description for the product</small>
+			<small id="descriptionHelp" class="form-text text-muted">Inserisci una descrizione per il prodotto</small>
 		</div>
 
 		<div class="form-group">
-			<label for="shortDescription">Short Description</label>
+			<label for="shortDescription">Descrizione breve</label>
 			<input type="text" class="form-control" name="shortDescription" id="shortDescription"
-				aria-describedby="shortDescriptionHelp" placeholder="Enter Product Short Description"
+				aria-describedby="shortDescriptionHelp" placeholder="Inserisci una breve descrizione"
 				value="${bean.getShortDescription()}">
-			<small id="shortDescriptionHelp" class="form-text text-muted">Enter a short Description</small>
+			<small id="shortDescriptionHelp" class="form-text text-muted">Inserisci una breve descrizione</small>
 		</div>
 
 		<div class="form-group">
-			<label for="metaDescription">Meta Description</label>
+			<label for="metaDescription">Meta Descrizione</label>
 			<input type="text" class="form-control" name="metaDescription" id="metaDescription"
-				aria-describedby="metaDescriptionHelp" placeholder="Enter Product meta Description"
+				aria-describedby="metaDescriptionHelp" placeholder="Inserisci la meta descrizione"
 				value="${bean.getMetaDescription()}">
-			<small id="metaDescriptionHelp" class="form-text text-muted">Enter a meta description</small>
+			<small id="metaDescriptionHelp" class="form-text text-muted">Inserisci la meta descrizione</small>
 		</div>
 
 		<div class="form-group">
-			<label for="metaKeyword">Meta Keyword</label>
+			<label for="metaKeyword">La Meta parola chiave</label>
 			<input type="text" class="form-control" name="metaKeyword" id="metaKeyword"
-				aria-describedby="metaKeywordHelp" placeholder="Enter Product meta keyword"
+				aria-describedby="metaKeywordHelp" placeholder="Inserisci la meta parola chiave del prodotto"
 				value="${bean.getMetaKeyword()}">
-			<small id="metaKeywordHelp" class="form-text text-muted">Enter a meta keyword</small>
+			<small id="metaKeywordHelp" class="form-text text-muted">Inserisci la meta parola chiave del prodotto</small>
 		</div>
 
-		<label for="price">Price</label>
+		<label for="price">Prezzo</label>
 		<div class="input-group mb-3">
 			<div class="input-group-prepend">
 				<span class="input-group-text">&euro;</span>
@@ -55,7 +55,7 @@
 				value="${bean.getPrice()}" required>
 		</div>
 		
-		<label for="tax">Tax</label>
+		<label for="tax">Imposta</label>
 		<div class="input-group mb-3">
 			<div class="input-group-prepend">
 				<span class="input-group-text">%</span>
@@ -64,14 +64,7 @@
 				value="${bean.getTax()}" required>
 		</div>
 
-		<div class="form-group">
-			<label for="weight">Weight</label>
-			<input type="number" class="form-control" name="weight" id="weight" aria-describedby="weightHelp"
-				step="0.01" placeholder="1,4" required value="${bean.getWeight()}">
-			<small id="weightHelp" class="form-text text-muted">Enter the product weight</small>
-		</div>
-
-		<label for="discount">Discount</label>
+		<label for="discount">Sconto</label>
 		<div class="input-group mb-3">
 			<div class="input-group-prepend">
 				<span class="input-group-text">%</span>
@@ -81,21 +74,21 @@
 		</div>
 
 		<div class="form-group">
-			<label for="onSale">Products On Sale</label>
+			<label for="onSale">Prodotto in vendita</label>
 			<input type="number" class="form-control" name="onSale" id="onSale" aria-describedby="onSaleHelp"
 				placeholder="9" value="${bean.getOnSale()}">
-			<small id="onSaleHelp" class="form-text text-muted">Enter the number of product on sale</small>
+			<small id="onSaleHelp" class="form-text text-muted">Inserisci il numero del prodotto in vendita</small>
 		</div>
 
 		<div class="form-group">
-			<label for="quantity">Quantity</label>
+			<label for="quantity">Quantità</label>
 			<input type="number" class="form-control" name="quantity" id="quantity" aria-describedby="quantityHelp"
 				placeholder="120" value="${bean.getQuantity()}">
-			<small id="quantityHelp" class="form-text text-muted">Enter the number of available products</small>
+			<small id="quantityHelp" class="form-text text-muted">Inserisci il numero di prodotti disponibili</small>
 		</div>
 		
 		<div class="form-group">
-		<label for="categories">Categories</label>
+		<label for="categories">Categorie</label>
 		<div class="select is-multiple">
 			
 		  <select multiple size="${categories.size()}" name="categories" id="categories">
@@ -109,10 +102,10 @@
 		<div class="form-check mb-3">
 			<input class="form-check-input" type="checkbox" value="" name="available" id="available" checked>
 			<label class="form-check-label" for="available">
-				Is Available
+				È disponibile
 			</label>
 		</div>
-		<button type="submit" class="btn btn-success mt-2">Update Product</button>
+		<button type="submit" class="btn btn-success mt-2">Aggiorna prodotto</button>
 		<c:if test="${error != null}">
 			<div class="error">
 				<p> ${error} </p>

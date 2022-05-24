@@ -14,13 +14,13 @@
           <div class="login-inner">
             <img src="./resources/images/omino.png" alt="omino">
             <input type="email" id="username" name="email" id="email" aria-describedby="nameHelp"
-            placeholder="Enter your email" required>
+            placeholder="Inserisci la tua email" required>
         </div>
 
         <div class="login-inner">
             <img src="./resources/images/lucchetto.png" alt="lucchetto">
             <input type="password" id="password" name="password" id="password" aria-describedby="nameHelp"
-                placeholder="Enter your password" min="8" required>
+                placeholder="Inserisci la tua password" min="8" required>
             <input type="hidden" name="action" value="login">
         </div>
 

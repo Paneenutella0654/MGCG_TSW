@@ -10,20 +10,19 @@
 		<div class="admin-order">
 		<div class="body">
 		 	<p><b>ID ${prod.getId() }</b></p>
-		 	<p>Name ${prod.getName() }</p>
-		 	<p>Short Description: ${prod.getShortDescription() }</p>
-		 	<p>Price: ${prod.getPrice() }</p>
-		 	<p>Weight: ${prod.getWeight() }</p>
-		 	<p>Available: ${prod.isAvailable() ? "Yes": "No"}</p>
-		 	<p>Quantity: ${prod.getQuantity() }</p>
+		 	<p>Nome ${prod.getName() }</p>
+		 	<p>Descrizione breve: ${prod.getShortDescription() }</p>
+		 	<p>Prezzo: ${prod.getPrice() }</p>
+		 	<p>Disponibile: ${prod.isAvailable() ? "Yes": "No"}</p>
+		 	<p>Quantità: ${prod.getQuantity() }</p>
 	 	</div>
 	 	<div class="actions">
-	 		<a href="<c:url value="/Admin/Products?action=view&id=${prod.getId()}"/>" class="btn btn-success">View</a>
-    		<a href="<c:url value="/Admin/Products?action=edit&id=${prod.getId()}"/>" class="btn btn-primary">Edit</a>
+	 		<a href="<c:url value="/Admin/Products?action=view&id=${prod.getId()}"/>" class="btn btn-success">Visualizzazione</a>
+    		<a href="<c:url value="/Admin/Products?action=edit&id=${prod.getId()}"/>" class="btn btn-primary">Modifica</a>
     		<form action="<c:url value="/Admin/Products"/>" method="post">
     			<input type="hidden" name="action" id="action" value="delete">
     			<input type="hidden" name="id" id="id" value="${prod.getId()}">
-    			<button class="btn btn-danger" style="width: 100%">Delete</button>
+    			<button class="btn btn-danger" style="width: 100%">Elimina</button>
     		</form>
     	</div>
 	</div>
