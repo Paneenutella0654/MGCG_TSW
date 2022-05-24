@@ -62,7 +62,6 @@ public class ProductDAO implements GenericDAO<Product> {
 					bean.setDiscount(rs.getDouble("discount"));
 					bean.setOnSale(rs.getInt("onSale"));
 					bean.setQuantity(rs.getInt("quantity"));
-					bean.setImagePath(rs.getString("imagePath"));
 					if (rs.getString("cname") != null) {
 						do {
 							Category c = new Category();
@@ -109,7 +108,6 @@ public class ProductDAO implements GenericDAO<Product> {
 					bean.setDiscount(rs.getDouble("discount"));
 					bean.setOnSale(rs.getInt("onsale"));
 					bean.setQuantity(rs.getInt("quantity"));
-					bean.setImagePath(rs.getString("imagePath"));
 					if (rs.getString("cname") != null) {
 						do {
 							Category c = new Category();
