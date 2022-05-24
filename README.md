@@ -1,11 +1,10 @@
-# befloral
+# MGCG
 TSW E-Commerce Project for University of Study of Salerno
 
-This is a project made by Students of University of Salerno for an ecommerce of flowers.
+This is a project made by Students of University of Salerno for an ecommerce of spare parts for cars.
 
 Quick Start on Eclipse:
 - Clone this repo
-- Enter the cloned folder and extract eclipse-settings-befloral.7z "here" into the same folder of the project root
 - Open Eclipse and click File > Open Project from File System > Select the root directory for the project you cloned
 - From eclipse, right click on the Project > Properties > Java Build Path
 - Change the JRE System Library > Edit > Select the one you have or an Enviroment one.
@@ -16,13 +15,13 @@ Quick Start on Eclipse:
 - Reach the SQL Folder, run one by one, in naming order the SQL queries in the .sql files
 - After populating your database just Right click on the project > Run As > Run on Server
 
-It should open a new page on your browser pointing to http://localhost/ProjectName/Home 
+It should open a new page on your browser pointing to http://localhost/MGCG/Home 
 Well done!
 
 Navigational Diagram
 
-![image](https://user-images.githubusercontent.com/11262725/119989737-ce91f080-bfc7-11eb-8745-95b9b1ce8569.png)
+![image](https://user-images.githubusercontent.com/104584785/170060981-0a0fb356-7f32-46ae-91b5-75428a6b923b.png)
 
 Er Diagram
 
-![image](https://user-images.githubusercontent.com/11262725/119989768-d81b5880-bfc7-11eb-85d2-1d09d46ca104.png)
+![image](https://user-images.githubusercontent.com/104584785/170060566-cb119fcd-77e7-4504-a1eb-fb655ac1f522.png)

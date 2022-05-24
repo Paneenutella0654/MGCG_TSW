@@ -44,10 +44,10 @@
 					<form action="Cart" method="post">
 						<input type="hidden" name="action" value="add">
 						<input type="hidden" name="id" value="${bean.getId()}">
-						<button type="submit" class="button is-success" style="width:100%">Add to cart</button>
+						<button type="submit" class="button is-success" style="width:100%">Aggiungi al carrello</button>
 					</form>
 					<c:if test="${user != null}">
-						<button class="button is-primary mt-2" onclick="openModal()">Review</button>
+						<button class="button is-primary mt-2" onclick="openModal()">Revisione</button>
 					</c:if>
 				</div>
 			</div>
@@ -95,15 +95,15 @@
 		      	<i class="fa fa-star fa-2x is-clickable has-text-warning" id="3-star" onclick="starClicked(this)"></i>
 		      	<i class="fa fa-star fa-2x is-clickable has-text-warning" id="4-star" onclick="starClicked(this)"></i>
 		      	<i class="fa fa-star fa-2x is-clickable has-text-white-ter" id="5-star" onclick="starClicked(this)"></i>
-		      	<label class="label">Add a title</label>
+		      	<label class="label">Aggiungi un titolo</label>
 		      	<input class="input" type="text" name="title" id="title" placeHolder="Important things to know">
-		      	<label class="label">Add a review</label>
+		      	<label class="label">Aggiungi una recensione</label>
 		      	<textarea class="textarea" name="body" id="body" placeHolder="What you liked and you didn't like..."></textarea>
 		      </form>
 		    </section>
 		    <footer class="modal-card-foot">
-		      <button class="button is-success" id="reviewSubmit">Submit</button>
-		      <button class="button" onclick="closeModal()">Cancel</button>
+		      <button class="button is-success" id="reviewSubmit">Invia</button>
+		      <button class="button" onclick="closeModal()">Elimina</button>
 		    </footer>
 		  </div>
 		</div>
@@ -176,7 +176,7 @@
 			});
 
 		});
-		///aaaaaaaaaaaaaaaaaaaaaaaaaa
+		
 
 		/*
 		Zoom(".images-big", {

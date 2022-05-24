@@ -4,7 +4,7 @@
 <link href="resources/css/summary.css" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Checkout">
 	<div id="notification" class="notification is-hidden"><button class="delete" onclick="closeNotification()">X</button><span id="notification-text">Test</span></div>
-	<h1>Order Summary</h1>
+	<h1>Riepilogo dell'ordine</h1>
 	<div class="summary">
 		<div class="left">
 			<div class="address">
@@ -12,7 +12,7 @@
 					<h2>1.</h2>
 				</div>
 				<div class="head">
-					<h2>Delivery Address</h2>
+					<h2>Indirizzo di consegna</h2>
 				</div>
 				
 				<div id="checkout-address" class="body">
@@ -23,11 +23,11 @@
 						<p>${address.getInfo()}</p>
 					</c:if>
 					<c:if test="${address == null }">
-						<p>No address, add one</p>
+						<p>Nessun indirizzo, aggiungine uno</p>
 					</c:if>
 				</div>
 				<div class="actions">
-					<button id="btn-addressModal" class="button is-success">Select</button>
+					<button id="btn-addressModal" class="button is-success">Seleziona</button>
 				</div>
 			</div>
 			<hr>
@@ -36,14 +36,14 @@
 					<h2>2.</h2>
 				</div>
 				<div class="head">
-					<h2>Payment</h2>
+					<h2>Pagamenti</h2>
 				</div>
 				<div class="body">
 					<p><b>Mastercard</b> termina con **62</p>
 				</div>
 				<div class="actions">
 					<ul>
-						<li><a class="links" href="#">Add</a></li>
+						<li><a class="links" href="#">Inserisci</a></li>
 					</ul>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 								<li class="bouquet-price mobile-hidden">
 									300,00 &euro;
 								</li>
-								<li class="order-number">Short description</li>
+								<li class="order-number">Breve descrizione</li>
 								<li class="invoice-links">
 									<a href="#" target="_blank" class="download-link"></a>
 									<a href="#" class="generate-invoice"></a>
@@ -69,7 +69,7 @@
 						</div>
 						<div class="flex">
 							<ul>
-								<li><a class="links" href="#">Edit</a></li>
+								<li><a class="links" href="#">Modifica</a></li>
 							</ul>
 						</div>
 					</div>
@@ -81,29 +81,29 @@
 			<form action="Orders" method="post">
 				<input type="hidden" name="action" value="buy"/>
 				<div class="right-buy">
-					<button class="links" type="submit">Buy Now</button>
+					<button class="links" type="submit">Compra ora</button>
 				</div>
 				<hr>
-				<h2>Order Summary</h2>
+				<h2>Riepilogo dell'ordine</h2>
 				<div>
-					<div><p>Products</p></div>
+					<div><p>Prodotti</p></div>
 					<div><p>13.90 &euro;</p></div>
 					
 				</div>
 				<div>
-					<div><p>Shipping cost</p></div>
+					<div><p>Spese di spedizione</p></div>
 					<div><p>0.00 &euro;</p></div>
 				</div>
 				<hr>
 				<div>
-					<div><h2>Total order</h2></div>
+					<div><h2>Totale ordine</h2></div>
 					<div><h2>13.90 &euro;</h2></div>
 				</div>
-				<h3>Tax fees included</h3>
+				<h3>Tasse incluse</h3>
 				<div class="form-check mb-4">
 					<input class="form-check-input" type="checkbox" value="" name="isGift" id="isGift">
 					<label class="form-check-label" for="isGift">
-						Is a Gift
+						è un regalo
 					</label>
 				</div>
 			
@@ -121,15 +121,15 @@
 			<div class="modal-background"></div>
 			<div class="modal-card">
 				<header class="modal-card-head">
-				  <p class="modal-card-title">Select an Address</p>
+				  <p class="modal-card-title">Seleziona un indirizzo</p>
 				  <button id="btn-addressModalClose" class="delete" aria-label="close"></button>
 				</header>
 				<section id="body-addressModal" class="modal-card-body">
 					
 	 			</section>
 				<footer class="modal-card-foot">
-					<a class="button is-success" href="<c:url value="/User?action=createAddress"/>">Create New Address</a>
-					<button id="btn-addressModalCancel" class="button">Cancel</button>
+					<a class="button is-success" href="<c:url value="/User?action=createAddress"/>">Crea nuovo indirizzo</a>
+					<button id="btn-addressModalCancel" class="button">Cancella</button>
 				</footer>
 			</div>
 		</div>

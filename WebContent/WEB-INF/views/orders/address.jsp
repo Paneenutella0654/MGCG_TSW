@@ -7,28 +7,28 @@
 		<div class="row">
 			<div class="col">
 				<div class="form-group">
-					<label for="firstName">First Name</label>
+					<label for="firstName">Nome</label>
 					<input type="text" class="form-control" name="firstName" id="firstName" aria-describedby="firstNameHelp"
 						placeholder="Mario..." required>
-					<small id="firstNameHelp" class="form-text text-muted">Destination first name</small>
+					<small id="firstNameHelp" class="form-text text-muted">Nome di destinazione</small>
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
-					<label for="lastName">Last Name</label>
+					<label for="lastName">Cognome</label>
 					<input type="text" class="form-control" name="lastName" id="lastName" aria-describedby="lastNameHelp"
 						placeholder="Rossi..." required>
-					<small id="lastNameHelp" class="form-text text-muted">Destination last name</small>
+					<small id="lastNameHelp" class="form-text text-muted">Cognome destinazione</small>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-8">
 				<div class="form-group">
-					<label for="address">Address</label>
+					<label for="address">Indirizzo</label>
 					<input type="text" class="form-control" name="address" id="address" aria-describedby="addressHelp"
 						placeholder="Via Roma, 12/A..." required>
-					<small id="lastNameHelp" class="form-text text-muted">Destination address and civic number</small>
+					<small id="lastNameHelp" class="form-text text-muted">Indirizzo di destinazione e numero civico</small>
 				</div>
 			</div>
 			<div class="col">
@@ -36,25 +36,25 @@
 					<label for=postalCode>CAP</label>
 					<input type="text" class="form-control" name="postalCode" id="postalCode" aria-describedby="postalCodeHelp"
 						placeholder="84100" required>
-					<small id="postalCodeHelp" class="form-text text-muted">Postal code of destination</small>
+					<small id="postalCodeHelp" class="form-text text-muted">Codice postale di destinazione</small>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-8">
 				<div class="form-group">
-					<label for="city">City</label>
+					<label for="city">Città</label>
 					<input type="text" class="form-control" name="city" id="city" aria-describedby="cityHelp"
 						placeholder="Milano..." required>
-					<small id="lastNameHelp" class="form-text text-muted">Destination city</small>
+					<small id="lastNameHelp" class="form-text text-muted">Città di destinazione</small>
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
-					<label for="province">Province</label>
+					<label for="province">Provincia</label>
 					<input type="text" class="form-control" name="province" id="province" aria-describedby="provinceHelp"
 						placeholder="MI..." required>
-					<small id="provinceHelp" class="form-text text-muted">Destination province abbreviation</small>
+					<small id="provinceHelp" class="form-text text-muted">Abbreviazione della provincia di destinazione</small>
 				</div>
 			</div>
 		</div>
@@ -63,20 +63,20 @@
 			<label for="phone"></label>
 			<input type="text" class="form-control" name="phone" id="phone" aria-describedby="phoneHelp"
 				placeholder="3929009...">
-			<small id="phoneHelp" class="form-text text-muted">Phone number to refer</small>
+			<small id="phoneHelp" class="form-text text-muted">Numero di telefono a cui fare riferimento</small>
 		</div>
 		
 		<div class="form-group">
 			<label for="info"></label>
 			<input type="text" class="form-control" name="info" id="info" aria-describedby="infoHelp"
 				placeholder="Cancello verde di fronte alla banca...">
-			<small id="infoHelp" class="form-text text-muted">Other info for the delivery</small>
+			<small id="infoHelp" class="form-text text-muted">Altre info per la consegna</small>
 		</div>
 		
 		<div class="form-check mb-3">
 			<input class="form-check-input" type="checkbox" value="" name="save" id="save">
 			<label class="form-check-label" for="save">
-				Save this address
+				Salva questo indirizzo
 			</label>
 		</div>
 		
@@ -84,7 +84,7 @@
 			<label for="alias"></label>
 			<input type="text" class="form-control" name="alias" id="alias" aria-describedby="aliasHelp"
 				placeholder="Home, Office..." disabled>
-			<small id="Help" class="form-text text-muted">Enter an alias to save this address</small>
+			<small id="Help" class="form-text text-muted">Inserisci un alias per salvare questo indirizzo</small>
 		</div>
 		
 		<hr>
@@ -92,7 +92,7 @@
 		<div class="form-check mb-3">
 			<input class="form-check-input" type="checkbox" value="" name="isGift" id="isGift">
 			<label class="form-check-label" for="isGift">
-				Is a Gift
+				è un regalo
 			</label>
 		</div>
 		
@@ -100,11 +100,11 @@
 			<label for="giftMessage"></label>
 			<input type="text" class="form-control" name="giftMessage" id="giftMessage" aria-describedby="giftMessageHelp"
 				placeholder="Tanti auguri di buon compleano..." disabled>
-			<small id="giftMessageHelp" class="form-text text-muted">Insert a gift message</small>
+			<small id="giftMessageHelp" class="form-text text-muted">Inserisci un messaggio regalo</small>
 		</div>
 		
 		
-		<button class="btn btn-success" type="submit">Save</button>
+		<button class="btn btn-success" type="submit">Salva</button>
 		
 	</form>
 	
