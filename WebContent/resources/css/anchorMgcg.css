@@ -1,0 +1,21 @@
+
+a.anchorMgcg:link{
+	color: #006C7B ;
+}
+
+a.anchorMgcg:hover{
+	font-size: 150%;
+	cursor: pointer;	
+	color: #90B79C ;
+}
+
+a.anchorMgcg:active{
+	color: #529A89 ;
+}
+
+a.anchorMgcg:visited {
+	color: #529A89 ;
+}
+a.anchorMgcg:after {
+	color: #529A89 ;
+}

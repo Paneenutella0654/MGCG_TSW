@@ -13,14 +13,14 @@
 		<div  >	
 			
 			<h1 class="error-code">403</h1>
-			<p class="error">Access denied....</p>
-			<p class="error">You don't have peermission to access this page.</p>
+			<p class="error">Accesso negato...</p>
+			<p class="error">Non sei autorizzato ad accedere a questa pagina.</p>
 			
 		</div>
 	
 		
 		<form method="get" action="Home">
-			<button  class="btn btn-success mt-2" >Go Back</button>
+			<button  class="btn btn-success mt-2" >Indietro</button>
 		</form>
             
             

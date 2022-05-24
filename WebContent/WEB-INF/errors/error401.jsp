@@ -13,13 +13,13 @@
 		<div>	
 			
 			<h1 class="error-code">401</h1>
-			<p class="error">Oops! Authorization required.</p>
-			<p class="error">Try login frist.</p>
+			<p class="error">Oops! Autorizzazione richiesta.</p>
+			<p class="error">Effetua il login.</p>
 			
 		</div>
 			
 		<form method="get" action="Home">
-			<button  class="btn btn-success mt-2" >Go Back</button>
+			<button  class="btn btn-success mt-2" >Indietro</button>
 		</form>
                        
             <div class="objects">

@@ -13,14 +13,14 @@
 		<div  >	
 			
 			<h1 class="error-code">503</h1>
-			<p class="error">Service Unavailable </p>
-			<p class="error">The server is temporarily busy, try again later!</p>
+			<p class="error">Servizio non disponibile </p>
+			<p class="error">Il server è momentaneamente occupato, riprovare più tardi!</p>
 			
 		</div>
 	
 		
 		<form method="get" action="Home">
-			<button  class="btn btn-success mt-2" >Go Back</button>
+			<button  class="btn btn-success mt-2" >Indietro</button>
 		</form>
             
             

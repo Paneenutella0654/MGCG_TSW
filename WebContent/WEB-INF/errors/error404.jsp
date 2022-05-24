@@ -13,14 +13,14 @@
 		<div  >	
 			
 			<h1 class="error-code">404</h1>
-			<p class="error">Oops! Page not found</p>
-			<p class="error">Sorry, but the page you are looking for is not found.</p>
+			<p class="error">Ops! pagina non trovata</p>
+			<p class="error">Siamo spiacenti, ma la pagina che stai cercando non è stata trovata.</p>
 			
 		</div>
 	
 		
 		<form method="get" action="Home">
-			<button  class="btn btn-success mt-2" >Go Back</button>
+			<button  class="btn btn-success mt-2" >Indietro</button>
 		</form>
             
             

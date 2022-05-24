@@ -92,7 +92,7 @@
 		</div>
 		<!-- Copyright -->  
 		<div class="footer-right">
-			<a class="anchorBefloral" href="/Home">@2022 Copyright: MGCG Software house</a>
+			<a class="anchorMgcg" href="/Home">@2022 Copyright: MGCG Software house</a>
 		</div>
 	</div>
 	<!-- Footer -->

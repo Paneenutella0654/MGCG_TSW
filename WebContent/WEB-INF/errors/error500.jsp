@@ -13,14 +13,14 @@
 		<div  >	
 			
 			<h1 class="error-code">500</h1>
-			<p class="error">Oops! Something went wrong.</p>
-			<p class="error">Try to refresh this page or feel free to contact us if the problem persists.</p>
+			<p class="error">Ops! Qualcosa è andato storto.</p>
+			<p class="error">Prova ad aggiornare questa pagina o non esitare a contattarci se il problema persiste.</p>
 			
 		</div>
 	
 		
 		<form method="get" action="Home">
-			<button  class="btn btn-success mt-2" >Go Back</button>
+			<button  class="btn btn-success mt-2" >Indietro</button>
 		</form>
             
             
