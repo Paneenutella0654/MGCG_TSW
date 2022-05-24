@@ -35,13 +35,13 @@
 			          <h1 class="title"><a href="<c:url value="/Products?action=view&id=${bean.getId()}"/>">${bean.getName()}</a></h1>
 			          <p class="subtitle">&euro; ${bean.getPrice()}</p>
 			        </div>
-			        <div id="productadd_${bean.getId()}" class="product-buy"><i class="material-icons">add_shopping_cart</i></div>
+			        <div id="productadd_${bean.getId()}" class="product-buy"><i class="material-icons">aggiungi_carrello_della_spesa</i></div>
 			      </div>
 			      <div class="product-right">
-			        <div class="product-done"><i class="material-icons">done</i></div>
+			        <div class="product-done"><i class="material-icons">fatto</i></div>
 			        <div class="product-details">
 			          <h1 class="title">${bean.getName()}</h1>
-			          <p class="subtitle">Added to your cart</p>
+			          <p class="subtitle">aggiunto al tuo carrello</p>
 			        </div>
 			        <div id="productremove_${bean.getId()}" class="product-remove"><i class="material-icons">clear</i></div>
 			      </div>
