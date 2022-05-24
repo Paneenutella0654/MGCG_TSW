@@ -21,8 +21,8 @@ Well done!
 
 Navigational Diagram
 
-![image](https://user-images.githubusercontent.com/104584785/170060566-cb119fcd-77e7-4504-a1eb-fb655ac1f522.png)
+![image](https://user-images.githubusercontent.com/104584785/170060981-0a0fb356-7f32-46ae-91b5-75428a6b923b.png)
 
 Er Diagram
 
-![image](https://user-images.githubusercontent.com/104584785/170060981-0a0fb356-7f32-46ae-91b5-75428a6b923b.png)
+![image](https://user-images.githubusercontent.com/104584785/170060566-cb119fcd-77e7-4504-a1eb-fb655ac1f522.png)
