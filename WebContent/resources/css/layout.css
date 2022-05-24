@@ -66,50 +66,99 @@ input.block {
     grid-column-gap: 3em;
 }
 
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #FFF;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.login{
+      background: -webkit-linear-gradient(top, #6AABD2, #a2daf6, #abd26a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: .8rem auto;
+    max-width: 30rem;
+    height: 42rem;
+    padding: 0 1.5rem;
+    box-shadow: 0px -5px 50px -5px #6AABD2,
+    0px 5px 50px -5px  #abd26a;
+    border-radius: 9px;
 }
 
-.form-control:disabled, .form-control[readonly] {
-    background-color: #e9ecef;
-    opacity: 1;
+.login-header{
+    color: white;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.form-group {
-    margin-bottom: 1rem;
+.login-header>img{
+    max-width: 50%;
+    border-radius: 30px;
+    background-color: white;
+	margin-top:1rem;
 }
 
-.form-text {
-    display: block;
-    margin-top: .25rem;
+.login-inner{
+    display: flex;
+    align-items: center;
+    margin: 0 2.7rem 1rem 2.7rem;
+    border-bottom: 1px solid white;
+    padding: 1rem;
 }
 
-.form-check {
-    display: block;
-    min-height: 1.5rem;
-    padding-left: 1.5em;
-    margin-bottom: .125rem;
+.login-inner>img{
+    max-width: 10%;
 }
 
-.form-check-input {
-    position: absolute;
-    margin-top: .3rem;
-    margin-left: -1.25rem;
+
+#username,
+#password
+{
+    color: white;
+    background: transparent;
+    border: none;
+    padding: .5rem 2.5rem;
 }
 
-.form-check-label {
-    margin-bottom: 0;
+#username::placeholder,
+#password::placeholder
+{
+    color: white;
 }
+
+
+.login-buttons{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}
+
+input[type="submit"],
+input[type="reset"]
+{
+	
+    padding: .7rem 2.5rem;
+    border: none;
+    border-radius: 25px;
+    color: #FFF;
+    background-color: #abd26a;
+    border-color: #abd26a;
+
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover
+{
+    color: #333;
+   
+}
+
+
+h6{
+	margin-left: 3rem;
+	color:white;
+}
+
 
 .form-check-input:disabled~.form-check-label {
     color: #6c757d;
@@ -163,6 +212,7 @@ button,
 input {
     overflow: visible;
 }
+
 
 button,
 input,
@@ -274,6 +324,7 @@ textarea {
     user-select: none;
     background-image: none;
     border: 1px solid transparent;
+    border-radius: 25px;
 }
 .btn:focus,
 .btn:active:focus {
@@ -316,8 +367,9 @@ textarea {
 
 .btn-success {
     color: #FFF;
-    background-color: #28a745;
-    border-color: #28a745;
+    background-color: #abd26a;
+    border-color: #abd26a;
+    margin-top:3rem;
 }
 
 .btn-primary {
@@ -334,8 +386,8 @@ textarea {
 
 .btn-info {
     color: #FFF;
-    background-color: #17a2b8;
-    border-color: #17a2b8;
+    background-color: #6AABD2;
+    border-color: #6AABD2;
 }
 
 hr {
@@ -429,7 +481,7 @@ a:after {
 
 .main-bar{
 	z-index: 1;
-    background-color: #56BFBA !important;
+    background-color: #6AABD2 !important;
     display: flow-root;
     padding: 0 10%;
 }
@@ -462,7 +514,7 @@ a:after {
     right: -50px;
     width: 80%;
     transform: skew(30deg);
-    background-color: #FF77D0;
+    background-color: #abd26a;
 }
 .logo-header:after {
     content: "";
@@ -472,7 +524,7 @@ a:after {
     z-index: -1;
     right: 10%;
     width: 2000px;
-    background-color: #FF77D0;
+    background-color: #abd26a;
 }
 .logo-header a{
     color: #FFF;
@@ -509,7 +561,7 @@ nav li a:link{
 
 nav li.active a{
     color: #FFF;
-    background-color: #FF77D0;
+    background-color: #abd26a;
     border-radius: 14px;
 }
 
@@ -530,7 +582,7 @@ nav ul li a {
 
 nav li:hover a{
     color: #FFF;
-    background-color: #FF77D0;
+    background-color: #abd26a;
     border-radius: 14px;
 }
 
@@ -625,7 +677,7 @@ nav li:hover a{
 .footer {
 	padding: 20px;
 	display: flex;
-    background-color: #56BFBA;
+    background-color: #6AABD2;
     justify-content: space-between;
     align-items: stretch;
 }
@@ -638,7 +690,7 @@ nav li:hover a{
 
 .footer a:hover{
 	color: #FFF;
-    background-color: #FF77D0;
+    background-color: #abd26a;
     border-radius: 14px;
 }
 

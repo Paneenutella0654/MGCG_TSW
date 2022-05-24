@@ -35,9 +35,8 @@
 
             <ul>
                 <li ${active.equals("Home") ? "class='active'": ""}><a href="<c:url value="/Home"/>">Home</a></li>
-				<li ${active.equals("Products") ? "class='active'": ""}><a href="<c:url value="/Products?action=search&searchVal=lamierati&active=Products"/>">Products</a></li>
-                <li ${active.equals("Plants") ? "class='active'": ""}><a href="<c:url value="/Products?action=search&searchVal=plant&active=Plants"/>">Plants</a></li>
-                <li ${active.equals("Bouquets") ? "class='active'": ""}><a href="<c:url value="/Products?action=search&searchVal=bouquet&active=Bouquets"/>">Bouquet</a></li>
+				<li ${active.equals("Products") ? "class='active'": ""}><a href="<c:url value="/Products?action=search&searchVal=lamierati&active=Products"/>">Prodotti</a></li>
+                <li ${active.equals("Plants") ? "class='active'": ""}><a href="<c:url value="/Products?action=search&searchVal=plant&active=Plants"/>">Offerte</a></li>
                 <li ${active.equals("Cart") ? "class='active'": ""}><a href="<c:url value="/Cart"/>">
                 	<i class="fa fa-shopping-bag fa-2x"></i>
                 	(<span id="cart-quantity">${cart == null ? 0:cart.getTotalProductsQuantity() }</span>)
@@ -49,7 +48,7 @@
                 	<li ${active.equals("User") ? "class='active'": ""}><a href="<c:url value="/User"/>">Profilo</a></li>
                 </c:if>
                 <c:if test="${admin != null}">
-                	<li ${active.equals("Admin") ? "class='active'": ""}><a href="<c:url value="/Admin"/>">Admin Panel</a></li>
+                	<li ${active.equals("Admin") ? "class='active'": ""}><a href="<c:url value="/Admin"/>">Panello Admin</a></li>
                 </c:if>
             </ul>
         </nav>

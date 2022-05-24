@@ -3,72 +3,72 @@
 
 <z:layout pageTitle="Register">
 	<div id="notification" class="notification is-danger is-hidden"><button class="delete" onclick="closeNotification()">X</button><span id="notification-text">Test</span></div>
-	<h1 class="is-size-1 has-text-weight-bold">Create new account</h1>
+	<h1 class="is-size-1 has-text-weight-bold">Crea un nuovo account</h1>
 	<form id="registerForm" action="Login" method="post" enctype="application/x-www-form-urlencoded">
 		<input type="hidden" name="action" value="register">
 
 		<div class="form-group">
-			<label for="firstName">First Name</label>
+			<label for="firstName">Nome</label>
 			<input type="text" class="form-control input" name="firstName" id="firstName" aria-describedby="nameHelp"
-				placeholder="Enter Your FirstName" required>
-			<p class="help is-danger is-hidden">Insert a First Name</p>
+				placeholder="Inserisci il nome" required>
+			<p class="help is-danger is-hidden">Inserisci il tuo nome</p>
 		</div>
 
 		<div class="form-group">
-			<label for="lastName">LastName</label>
+			<label for="lastName">Cognome</label>
 			<input type="text" class="form-control input" name="lastName" id="lastName" aria-describedby="nameHelp"
-				placeholder="Enter Your LastName" required>
-			<p class="help is-danger is-hidden">Insert a Last Name</p>
+				placeholder="inserisci il cognome" required>
+			<p class="help is-danger is-hidden">Inserisci il tuo cognome</p>
 		</div>
 
 		<div class="form-group">
 			<label for="email">Email</label>
 			<input type="email" class="form-control input" name="email" id="email" aria-describedby="nameHelp"
-				placeholder="Enter Your Email" required>
-			<p class="help is-danger is-hidden">Insert a Valid Email</p>
+				placeholder="Inserisci Email" required>
+			<p class="help is-danger is-hidden">Inserisci un Email valids</p>
 		</div>
-		<label for="email">Gender</label>
+		<label for="email">Genere</label>
 		<div class="control is-vcentered">
 				<label class="radio" for="gender_male">
 					<input  type="radio" name="gender" id="gender_male" value="Male">
-				Male
+				Maschio
 				</label>
 				<label class="radio" for="gender_female">
 					<input type="radio" name="gender" id="gender_female" value="Female"> 
-				Female
+				Femmina
 				</label>
 				<label class="radio" for="gender_undefined">
 					<input type="radio" name="gender" id="gender_undefined" value="Undefined" checked>
-				Undefined
+				Indefinito
 				</label>
 		</div>
 
 		<div class="form-group mt-2">
-			<label for="birthdayview">Birthday</label>
-			<input type="text" class="form-control input" name="birthdayview" id="birthdayview" aria-describedby="nameHelp"	placeholder="Enter Your Birthday" required>
+			<label for="birthdayview">Data di nascita</label>
+			<input type="text" class="form-control input" name="birthdayview" id="birthdayview" aria-describedby="nameHelp"	placeholder="Inserisci la data di nascita " required>
 			<input id="birthday" name="birthday" type="hidden"/>
-			<p class="help is-danger is-hidden">Insert a Valid Birthday (You must have at least 14 years)</p>
+			<p class="help is-danger is-hidden">Inserisci una data di nascita valida (Devi avere almeno 14 anni)</p>
 		</div>
 
 		<div class="form-group">
 			<label for="password">Password</label> <input type="password" class="form-control input" name="password"
-				id="password" aria-describedby="nameHelp" placeholder="Enter your password" min="8" required>
-			<p class="help is-danger is-hidden">Password must be at least 8 characters long and must contain: Uppercase char, lowercase char, a number</p>
+				id="password" aria-describedby="nameHelp" placeholder="Inserisci la password" min="8" required>
+			<p class="help is-danger is-hidden">La password deve essere lunga almeno 8 caratteri e deve contenere: carattere maiuscolo, carattere minuscolo, un numero</p>
 		</div>
 
 		<div class="form-group">
-			<label for="confirmpassword">Confirm Password</label>
+			<label for="confirmpassword">Conferma la Password</label>
 			<input type="password" class="form-control input" name="confirmpassword" id="confirmpassword"
-				aria-describedby="nameHelp" placeholder="Enter again your password" min="8" required>
-			<p class="help is-danger is-hidden">Confirm password doesn't match</p>
+				aria-describedby="nameHelp" placeholder="Inserisci di nuovo la password" min="8" required>
+			<p class="help is-danger is-hidden">La password non corrisponde</p>
 		</div>
 
 		<div class="form-check">
 			<input class="form-check-input" type="checkbox" name="subscribe" id="subscribe">
-			<label class="form-check-label" for="subscribe">Subscribe to newsletters</label>
+			<label class="form-check-label" for="subscribe">Iscriviti alla newsletters</label>
 		</div>
 
-		<button type="submit" class="button is-success mt-2">Register Now!</button>
+		<button type="submit" class="button is-success mt-2">Registrati ora!</button>
 	</form>
 	<script>
 		var error = false;
