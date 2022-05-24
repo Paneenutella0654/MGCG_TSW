@@ -14,11 +14,11 @@
 
 <div class="containerDetails" >  	
   	<div id="Details" style="background-image: radial-gradient(ellipse, rgba(57, 215, 156, 1) 0%, rgba(247, 25, 136, 0) 100%);">
-       		<h1 class="invoice">Order Details</h1>
+       		<h1 class="invoice">Dettagli Ordine</h1>
         	<div class="information_befloral">
-        		<p class="befloral_firm">Befloral</p>
+        		<p class="befloral_firm">MGCG</p>
         		<span>
-        			thank you very much for purchasing from us		
+        			grazie mille per aver acquistato da noi	
  				</span>
       		</div> 
        			
@@ -26,9 +26,9 @@
         	<div class="information_invoice">     		
         	  <div class="time">	
         		<c:set var = "orderDate" value = "${orderToShow.getCreateDate()}" />
-        		<p>Order executed on : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${orderDate}" /></p>
+        		<p>Ordine eseguito il : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${orderDate}" /></p>
         	     <p>${orderToShow.getDestination()}</p>
-        	      <p>User Details: </p>
+        	      <p>Dettagli Utente: </p>
 	        	  	   <div class="pad">
 	        	  	   	<p> ${user.getFirstName()}</p>
 	        	 	    	<p>  ${user.getLastName()}</p>
@@ -41,12 +41,11 @@
                         <table class="table table-lg">
                             <thead>
                                 <tr>
-                                    <th>Description</th>
-                                    <th>Weight Unit</th>
-                                    <th>Quantity</th>
-                                    <th>Unit price</th>
-                                    <th>Discount</th>
-                                    <th>Total</th>
+                                    <th>Descizione</th>
+                                    <th>Quantità</th>
+                                    <th>Prezzo Unitario</th>
+                                    <th>Sconto</th>
+                                    <th>Totale</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -57,7 +56,6 @@
 	                                        <p class="mb-0">${items.getName()}
 	                                        				<br> ${items.getShortDescription()} </p>
                                     </td>  
-                                    <td>${items.getWeight()}</td>
                                     <td>${items.getQuantity()}</td>
                                     <td>${items.getPriceString() }</td>
 	                                <td>${items.getDiscountString()}</td>                             
@@ -81,17 +79,17 @@
                                                 <td class="text-right">${orderToShow.getTotalPaidString() }</td>                                               
                                             </tr>
                                             <tr>
-                                                <th class="text-left">Tax: <span class="font-weight-normal">(22%)</span></th>
+                                                <th class="text-left">Tasse: <span class="font-weight-normal">(22%)</span></th>
                                                 <td class="text-right">TODO</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-left">Total:</th>
+                                                <th class="text-left">Totale:</th>
                                                 <td class="text-right text-primary">
                                                     <h5 class="font-weight-semibold">${orderToShow.getTotalPaidString()}</h5>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th class="text-left">Invoice #</th>
+                                                <th class="text-left">Fattura #</th>
                                                 <td class="text-right text-primary">
                                                     <h5 class="font-weight-semibold" id="track">${orderToShow.getTrackNumber()}</h5>
                                                 </td>
@@ -105,7 +103,7 @@
  	
  		<div>
  			<form method="get" action="User">
-				<button class="links" style="margin-top: 20px" id="back"> Go Back</button>
+				<button class="links" style="margin-top: 20px" id="back">Indietro</button>
 			</form>
  		</div>
 </div>

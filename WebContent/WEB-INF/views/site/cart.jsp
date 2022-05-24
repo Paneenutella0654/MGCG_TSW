@@ -16,7 +16,7 @@
 					<th>Prezzo</th>
 					<th>Prezzo totale</th>
 					<th>Quantita</th>
-					<th>Actions</th>
+					<th>Azione</th>
 				</tr>
 			</thead>
 			<tbody>

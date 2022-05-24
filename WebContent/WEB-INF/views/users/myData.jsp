@@ -5,36 +5,36 @@
 <z:layout pageTitle="MyData">
  
   
-	<h1 class="is-size-1 has-text-weight-semibold">Hi! ${user.getFirstName()} </h1>
+	<h1 class="is-size-1 has-text-weight-semibold">Ciao! ${user.getFirstName()} </h1>
 	<div class="user-profile">
 		<div class="user-profile-menu">
 			<ul>
 				<li>
-					<h2 class="title">My Account</h2>
+					<h2 class="title">Account</h2>
 				</li>
 				<li>
 					<a href="User?action=viewOrders" class="active">
-						<p>My Orders</p>
+						<p>Ordini</p>
 					</a>
 				</li>
 				<li>
 					<a href="User?action=viewAddresses" class="active">
-						<p>My Addresses</p>
+						<p>Indirizzo</p>
 					</a>
 				</li>
 				<li>
 					<a href="User?action=wishList">
-						<p>My Wish List</p>
+						<p>Wish List</p>
 					</a>
 				</li>
 				<li>
 					<a href="User?action=viewData">
-						<p>My Data</p>
+						<p>Data</p>
 					</a>
 				</li>
 				<li>
 					<a href="User?action=viewSubscription">
-						<p>My Subscription</p>
+						<p>Iscizione</p>
 					</a>
 				</li>
 			</ul>
@@ -58,7 +58,7 @@
 				 </div>
 				  
 				  <div>
-				  	<p>Profile</p>
+				  	<p>Profilo</p>
 				  		<table >
 							<tr>
 							  <th class="spaceA">Nome: </th>
@@ -69,7 +69,7 @@
 							  <th class="space">${user.getLastName() }</th>							  
 							</tr>
 							<tr>
-							  <th class="spaceA">Birthday: </th>
+							  <th class="spaceA">Compleanno: </th>
 							  <th class="space">${user.getBirthday()}</th>							  
 							</tr>
 							<tr>
@@ -81,7 +81,7 @@
 							  <th class="space">********</th>							  
 							</tr>
 							<tr>
-							  <th class="spaceA">Role: </th>
+							  <th class="spaceA">Ruolo: </th>
 							  <th class="space">${user.getRole()}</th>							  
 							</tr>
 							</table>
@@ -91,11 +91,4 @@
 			</div>
 		</div>
 	</div>
-	 
-
-
-
-
-
-	
 </z:layout>

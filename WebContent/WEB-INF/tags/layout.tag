@@ -4,6 +4,7 @@
 <html>
 
 <head>
+	<meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://fonts.cdnfonts.com/css/playlist" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
