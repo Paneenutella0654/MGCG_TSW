@@ -31,15 +31,15 @@
 					</div>
 				</div>
 			</div>
-			<button class="btn btn-success">Search</button>
+			<button class="btn btn-success">Cerca</button>
 		</form>
 	</div>
 	
 	<c:if test="${orders.size() == 0}">
-		<h1 class="mb-3">No order found</h1>
+		<h1 class="mb-3">Ordine non trovato</h1>
 	</c:if>
 	<c:if test="${orders.size() > 0}">
-		<h1 class="mb-3">Orders</h1>
+		<h1 class="mb-3">Ordini</h1>
 	</c:if>
 	
 	<c:forEach items="${orders}" var="order">
@@ -57,12 +57,12 @@
 		 	</c:if>
 	 	</div>
 	 	<div class="actions">
-	 		<a href="<c:url value="/Admin/Orders?action=edit&id=${order.getId()}"/>" class="btn btn-success">View</a>
-    		<a href="<c:url value="/Admin/Orders?action=edit&id=${order.getId()}"/>" class="btn btn-primary">Edit</a>
+	 		<a href="<c:url value="/Admin/Orders?action=edit&id=${order.getId()}"/>" class="btn btn-success">Visualizzazione</a>
+    		<a href="<c:url value="/Admin/Orders?action=edit&id=${order.getId()}"/>" class="btn btn-primary">Modifica</a>
     		<form action="<c:url value="/Admin/Orders"/>" method="post">
     			<input type="hidden" name="action" id="action" value="delete">
     			<input type="hidden" name="id" id="id" value="${order.getId()}">
-    			<button class="btn btn-danger" style="width: 100%">Delete</button>
+    			<button class="btn btn-danger" style="width: 100%">Elimina</button>
     		</form>
     	</div>
 	</div>

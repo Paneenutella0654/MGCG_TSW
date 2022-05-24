@@ -9,35 +9,35 @@
 		<div class="form-group">
 			<label for="name">Nome</label>
 			<input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp"
-				placeholder="Enter Product Name" required>
+				placeholder="Inserisci il nome del prodotto" required>
 			<small id="nameHelp" class="form-text text-muted">Immettere una descrizione breve</small>
 		</div>
 
 		<div class="form-group">
 			<label for="description">Descrizione</label>
 			<input type="text" class="form-control" name="description" id="description"
-				aria-describedby="descriptionHelp" placeholder="Enter Product Description" required>
+				aria-describedby="descriptionHelp" placeholder="Inserisci la descrizione del prodotto" required>
 			<small id="descriptionHelp" class="form-text text-muted">Inserisci il nome</small>
 		</div>
 
 		<div class="form-group">
 			<label for="shortDescription">Breve Descrizione</label>
 			<input type="text" class="form-control" name="shortDescription" id="shortDescription"
-				aria-describedby="shortDescriptionHelp" placeholder="Enter Product Short Description">
+				aria-describedby="shortDescriptionHelp" placeholder="Immettere una descrizione breve">
 			<small id="shortDescriptionHelp" class="form-text text-muted">Immettere una descrizione breve</small>
 		</div>
 
 		<div class="form-group">
 			<label for="metaDescription">Meta Description</label>
 			<input type="text" class="form-control" name="metaDescription" id="metaDescription"
-				aria-describedby="metaDescriptionHelp" placeholder="Enter Product meta Description">
+				aria-describedby="metaDescriptionHelp" placeholder="Inserisci la  meta description">
 			<small id="metaDescriptionHelp" class="form-text text-muted">Inserisci la  meta description</small>
 		</div>
 
 		<div class="form-group">
 			<label for="metaKeyword">Meta Keyword</label>
 			<input type="text" class="form-control" name="metaKeyword" id="metaKeyword"
-				aria-describedby="metaKeywordHelp" placeholder="Enter Product meta keyword">
+				aria-describedby="metaKeywordHelp" placeholder="Inserisci la meta keyword">
 			<small id="metaKeywordHelp" class="form-text text-muted">Inserisci la meta keyword</small>
 		</div>
 
