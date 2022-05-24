@@ -24,16 +24,16 @@
   	<div id="invoice">
        		<h1 class="invoice">Invoice</h1>
         	<div class="information_befloral">
-        		<p class="befloral_firm">Befloral</p>
+        		<p class="befloral_firm">Fattura</p>
         		<span>
-        			Daniele Giaquinto CEO Befloral <br>
-	        		Mercato San Severino SA 84085 <br>
-	        		+39 3663997645 // 02-896340007
+        			Gerardo Frino CEO MGCG <br>
+	        		Sant'andrea di Conza AV 83053 <br>
+	        		+39 3287611874 // 082735658
  				</span>
 	        	 	<div class="billing_time">
 							<c:set var = "now" value = '<%= new java.util.Date()%>' />
 							<p class="par_right" >
-								Billing Data : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${now}" />
+								Data Fattura : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${now}" />
 			        		</p>	
 	        		</div>
       		</div> 
@@ -42,9 +42,9 @@
         		
         	  <div class="time">	
         		<c:set var = "orderDate" value = "${orderToShow.getCreateDate()}" />
-        		<p>Order executed on : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${orderDate}" /></p>
+        		<p>Ordine eseguito il : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${orderDate}" /></p>
         	     <p>${orderToShow.getDestination()}</p>
-        	      <p>User Details: </p>
+        	      <p>Dettagli Utente: </p>
 	        	  	   <div class="pad">
 	        	  	   	<p> ${user.getFirstName()}</p>
 	        	 	    	<p>  ${user.getLastName()}</p>
@@ -57,12 +57,11 @@
                         <table class="table table-lg">
                             <thead>
                                 <tr>
-                                    <th>Description</th>
-                                    <th>Weight Unit</th>
-                                    <th>Quantity</th>
-                                    <th>Unit price</th>
-                                    <th>Discount</th>
-                                    <th>Total</th>
+                                    <th>Descrizione</th>
+                                    <th>Quantità</th>
+                                    <th>Prezzo unitario</th>
+                                    <th>Sconto</th>
+                                    <th>Totale</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -72,8 +71,7 @@
                                     <td>
 	                                        <p class="mb-0">${items.getName()}
 	                                        				<br> ${items.getShortDescription()} </p>
-                                    </td>  
-                                    <td>${items.getWeight()}</td>
+                                    </td>
                                     <td>${items.getQuantity()}</td>
                                     <td>${items.getPriceString()}</td>
 	                                <td>${items.getDiscountString()}</td>                             
@@ -98,17 +96,17 @@
                                                 <td class="text-right">${orderToShow.getTotalPaidString() }</td>                                               
                                             </tr>
                                             <tr>
-                                                <th class="text-left">Tax: <span class="font-weight-normal">(22%)</span></th>
+                                                <th class="text-left">Tasse: <span class="font-weight-normal">(22%)</span></th>
                                                 <td class="text-right">TODO</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-left">Total:</th>
+                                                <th class="text-left">Totale:</th>
                                                 <td class="text-right text-primary">
                                                     <h5 class="font-weight-semibold">${orderToShow.getTotalPaidString()}</h5>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th class="text-left">Invoice #</th>
+                                                <th class="text-left">Fattura #</th>
                                                 <td class="text-right text-primary">
                                                     <h5 class="font-weight-semibold" id="track">${orderToShow.getTrackNumber()}</h5>
                                                 </td>
@@ -123,11 +121,11 @@
  	</div>		   	 		
  	
  		<div class="d_button" > <button  id="send" type="button" class="links"><b>
-		    <i class="fa fa-paper-plane-o mr-1"></i></b>Send invoice</button> 
+		    <i class="fa fa-paper-plane-o mr-1"></i></b>Inviare la fattura</button> 
 		</div>	
  		
  		<div class="footer_B">
-				 <span class="text-muted">By Befloral financial service </span>
+				 <span class="text-muted">A cura del servizio finanziario Mgcg</span>
 		</div>
 		
  </div>

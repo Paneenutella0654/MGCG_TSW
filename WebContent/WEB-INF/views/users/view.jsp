@@ -3,36 +3,36 @@
 <link href="resources/css/user-profile.css" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Profile">
 
-	<h1 class="is-size-1 has-text-weight-semibold">Hi! ${user.getFirstName()} </h1>
+	<h1 class="is-size-1 has-text-weight-semibold">Ciao! ${user.getFirstName()} </h1>
 	<div class="user-profile">
 		<div class="user-profile-menu">
 			<ul>
 				<li>
-					<h2 class="title">My Account</h2>
+					<h2 class="title">Account</h2>
 				</li>
 				<li>
 					<a href="User?action=viewOrders" class="active">
-						<p>My Orders</p>
+						<p>Ordini</p>
 					</a>
 				</li>
 				<li>
 					<a href="User?action=viewAddresses" class="active">
-						<p>My Addresses</p>
+						<p>Indirizzi</p>
 					</a>
 				</li>
 				<li>
 					<a href="User?action=wishList">
-						<p>My Wish List</p>
+						<p>Wish List</p>
 					</a>
 				</li>
 				<li>
 					<a href="User?action=viewData">
-						<p>My Data</p>
+						<p>Data</p>
 					</a>
 				</li>
 				<li>
 					<a href="User?action=viewSubscription">
-						<p>My Subscription</p>
+						<p>Iscrizione</p>
 					</a>
 				</li>
 			</ul>
@@ -40,10 +40,10 @@
 		</div>
 
 		<div class="right">
-			<h3 class="title-left is-size-4 has-text-weight-semibold">My Orders</h3>
+			<h3 class="title-left is-size-4 has-text-weight-semibold">Ordini</h3>
 			<div class="user-previous-orders">
 				<c:if test="${orders.size() == 0 }">
-					<p>No order yet...!</p>
+					<p>Nessun ordine...!</p>
 				</c:if>
 				<c:forEach items="${orders}" var="order">
 					<div class="order-details">
@@ -56,18 +56,18 @@
 									<li class="bouquet-name"></li>
 									<li class="bouquet-price mobile-hidden">
 										${order.getTotalPaidString() }&euro;
-										<span>, with discount</span>
+										<span>, con sconto</span>
 									</li>
-									<li class="order-number">Order no. ${order.getId()}</li>
+									<li class="order-number">Ordine numero ${order.getId()}</li>
 									<li class="invoice-links">
-										<a href="#" onclick="target(${order.getId()})" class="download-link">Download Invoice</a>
-										<a href="User?action=invoiceView&orderId=${order.getId()}" target="_blank" class="generate-invoice">Generate Invoice</a>
+										<a href="#" onclick="target(${order.getId()})" class="download-link">Scarica Fattura</a>
+										<a href="User?action=invoiceView&orderId=${order.getId()}" target="_blank" class="generate-invoice">Genera fattura</a>
 									</li> 
 								</ul> 
 							</div> 
 							<div class="flex"> 
 								<ul>
-									<li><a class="links" href="Orders?action=details&&id=${order.getId()}">View Details</a></li>
+									<li><a class="links" href="Orders?action=details&&id=${order.getId()}">Vedi Dettagli</a></li>
 								</ul>
 
 							</div>
