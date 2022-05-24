@@ -19,7 +19,7 @@
 	  </div>
 	</div>
 	<c:if test="${products.size() == 0}">
-		<p class="">Non sono disponibili prodotti per questa categoria.</p>
+		<p class="">Non sono prodotti per questa categoria</p>
 	</c:if>
 		
 	<div class="product-list">
@@ -27,7 +27,7 @@
 			<div class="product-wrapper">
 			  <div class="product-container">
 			    <div class="product-top">
-			    	<img src="${bean.getImagePath()}">   <!-- devo fare attezione poiche in questo caso il nome dell'immagine deve essere l'id del prodotto (es img 18 per il prodotto con id 18) -->
+			    	<img src="${bean.getImagePath()}">
 			    </div>
 			    <div class="product-bottom">
 			      <div class="product-left">
@@ -35,15 +35,15 @@
 			          <h1 class="title"><a href="<c:url value="/Products?action=view&id=${bean.getId()}"/>">${bean.getName()}</a></h1>
 			          <p class="subtitle">&euro; ${bean.getPrice()}</p>
 			        </div>
-			        <div id="productadd_${bean.getId()}" class="product-buy"><i class="material-icons">aggiungi_carrello_della_spesa</i></div>
+			        <div id="productadd_${bean.getId()}" class="product-buy"><i class="material-icons">add_shopping_cart</i></div>
 			      </div>
 			      <div class="product-right">
 			        <div class="product-done"><i class="material-icons">fatto</i></div>
 			        <div class="product-details">
 			          <h1 class="title">${bean.getName()}</h1>
-			          <p class="subtitle">aggiunto al tuo carrello</p>
+			          <p class="subtitle">Aggiungi al carello</p>
 			        </div>
-			        <div id="productremove_${bean.getId()}" class="product-remove"><i class="material-icons">clear</i></div>
+			        <div id="productremove_${bean.getId()}" class="product-remove"><i class="material-icons">Pulisci</i></div>
 			      </div>
 			    </div>
 			  </div>
