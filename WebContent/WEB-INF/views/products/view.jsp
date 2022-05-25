@@ -17,19 +17,17 @@
 		<div class="product">
 			<div class="left">
 				<div class="images-small">
-					<c:forEach var = "i" begin = "1" end = "5" step="1" >   <!-- Ciclo che "crea" le immagini -->
 						<figure class="image is-square is-96x96 border-img">
-							<img id="pic-${i}>" src="https://source.unsplash.com/1152x1152/?sig=${prod.getId() + i}&flower,${prod.getName().replace(' ', '+')}"
+							<img src="/MGCG/resources/images/products/${prod.getId()}.jpg"
 							   onclick="onClick(document.getElementById('big-img').src=this.src) " 
 							   onmouseover="onHover(document.getElementById('big-img').src=this.src)"
 							>
 						 </figure> 
-					</c:forEach> 
 
 					
 				</div> 
 				<div class="images-big">
-					<img id="big-img" src="https://source.unsplash.com/1152x1152/?sig=${prod.getId()}&flower,${prod.getName().replace(' ', '+')}">
+					<img id="big-img" src="/MGCG/resources/images/products/${prod.getId()}.jpg">
 				</div>
 			</div>
 			<div class="right">
