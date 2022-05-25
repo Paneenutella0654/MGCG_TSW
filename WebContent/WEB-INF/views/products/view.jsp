@@ -79,7 +79,7 @@
 		  <div class="modal-background"></div>
 		  <div class="modal-card">
 		    <header class="modal-card-head">
-		      <p class="modal-card-title">New Review</p>
+		      <p class="modal-card-title">Nuova Recenzione</p>
 		      <button class="delete" aria-label="close" onclick="closeModal()"></button>
 		    </header>
 		    <section class="modal-card-body">
@@ -87,7 +87,7 @@
 		      	<input type="hidden" name="pid" id="pid" value="${prod.getId()}">
 		      	<input type="hidden" name="action" id="action" value="review">
 		      	<input type="hidden" name="score" id="score" value="4">
-		      	<label class="label">Overall Rating</label>
+		      	<label class="label">Valutazione generale</label>
 		      	<i class="fa fa-star fa-2x is-clickable has-text-warning" id="1-star" onclick="starClicked(this)"></i>
 		      	<i class="fa fa-star fa-2x is-clickable has-text-warning" id="2-star" onclick="starClicked(this)"></i>
 		      	<i class="fa fa-star fa-2x is-clickable has-text-warning" id="3-star" onclick="starClicked(this)"></i>
