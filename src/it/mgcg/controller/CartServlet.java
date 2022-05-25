@@ -79,7 +79,7 @@ public class CartServlet extends HttpServlet {
 		try {
 			if (action != null) {
 				if (action.equals("add")) {
-					int id = Integer.parseInt(request.getParameter("id"));
+					Integer id = Integer.parseInt(request.getParameter("id"));
 					cart.addProduct(model.doRetriveByKey(id));
 					response.sendRedirect("Products");
 					return;

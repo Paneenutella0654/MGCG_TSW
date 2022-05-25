@@ -43,7 +43,7 @@
 				<div class="product-action mt-4">
 					<form action="Cart" method="post">
 						<input type="hidden" name="action" value="add">
-						<input type="hidden" name="id" value="${bean.getId()}">
+						<input type="hidden" name="id" value="${prod.getId()}">
 						<button type="submit" class="button is-success" style="width:100%">Aggiungi al carrello</button>
 					</form>
 					<c:if test="${user != null}">
@@ -69,7 +69,7 @@
 					<c:if test="${review.getReply() != null}">
 						<hr>
 						<div class="rev-reply">
-							<em>BeFloral replied:</em>
+							<em>MGCG replied:</em>
 							<p>${review.getReply() }</p>
 						</div>
 					</c:if>	
