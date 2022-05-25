@@ -24,7 +24,7 @@
 				<tr>
 					<td>
 						<figure class="image is-128x128">
-							<img class="is-rounded" src="https://source.unsplash.com/120x120/?sig=${bean.getId()}&bouquet">
+							<img class="is-rounded" src="/MGCG/resources/images/products/${bean.getId()}.jpg">
 						</figure>
 					</td>
 					<td class="is-size-4 has-text-weight-medium">${bean.getProduct().getName() }</td>
