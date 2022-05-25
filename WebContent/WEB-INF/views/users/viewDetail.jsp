@@ -15,8 +15,8 @@
 <div class="containerDetails" >  	
   	<div id="Details" style="background-image: radial-gradient(ellipse, rgba(57, 215, 156, 1) 0%, rgba(247, 25, 136, 0) 100%);">
        		<h1 class="invoice">Dettagli Ordine</h1>
-        	<div class="information_befloral">
-        		<p class="befloral_firm">MGCG</p>
+        	<div class="information_mgcg">
+        		<p class="mgcg_firm">MGCG</p>
         		<span>
         			grazie mille per aver acquistato da noi	
  				</span>
