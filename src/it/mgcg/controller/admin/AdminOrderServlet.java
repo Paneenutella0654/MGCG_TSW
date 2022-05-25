@@ -94,8 +94,7 @@ public class AdminOrderServlet extends HttpServlet {
 				var order = model.doRetriveByKey(id);
 				request.setAttribute("bean", order);
 				request.setAttribute("items", order.getItems());
-				RequestDispatcher dispatcher = request.getServletContext()
-						.getRequestDispatcher("/WEB-INF/views/admin/orders/view.jsp");
+				RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/WEB-INF/views/admin/orders/view.jsp");
 				dispatcher.forward(request, response);
 				return;
 			}
