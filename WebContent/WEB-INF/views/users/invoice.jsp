@@ -23,8 +23,8 @@
         	
   	<div id="invoice">
        		<h1 class="invoice">Invoice</h1>
-        	<div class="information_befloral">
-        		<p class="befloral_firm">Fattura</p>
+        	<div class="information_mgcg">
+        		<p class="mgcg_firm">Fattura</p>
         		<span>
         			Gerardo Frino CEO MGCG <br>
 	        		Sant'andrea di Conza AV 83053 <br>
