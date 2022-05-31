@@ -25,7 +25,7 @@
 			<label for="email">Email</label>
 			<input type="email" class="form-control input" name="email" id="email" aria-describedby="nameHelp"
 				placeholder="Inserisci Email" required>
-			<p class="help is-danger is-hidden">Inserisci un Email valids</p>
+			<p class="help is-danger is-hidden">Inserisci un Email valida</p>
 		</div>
 		<label for="email">Genere</label>
 		<div class="control is-vcentered">

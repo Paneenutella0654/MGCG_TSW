@@ -45,7 +45,7 @@
 }
 
 .user-logout {
-	color: #41d5ab !important;
+	color: #48c774 !important;
 	display: block;
 	flex-direction: column;
 	padding: 16px 0 16px 24px;
@@ -92,7 +92,7 @@
 
 .links {
 	padding: 8px 16px;
-    background: #41d5ab;
+    background: #48c774;
     border-radius: 6px;
     margin: 0 auto;
     color: white !important;
