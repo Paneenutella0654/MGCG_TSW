@@ -49,14 +49,14 @@
 			
 		
 		<div class="form-group">
-			<label for="phone"></label>
+			<label for="phone"> Num Telefono</label>
 			<input type="text" class="form-control input" name="phone" id="phone" aria-describedby="phoneHelp"
 				placeholder="3929009...">
 			<small id="phoneHelp" class="form-text text-muted">Numero di telefono di riferimento</small>
 		</div>
 		
 		<div class="form-group">
-			<label for="info"></label>
+			<label for="info"> Informazioni aggiuntive</label>
 			<input type="text" class="form-control input" name="info" id="info" aria-describedby="infoHelp"
 				placeholder="Cancello verde di fronte alla banca...">
 			<small id="infoHelp" class="form-text text-muted">Informazioni aggiuntive per la consegna</small>
