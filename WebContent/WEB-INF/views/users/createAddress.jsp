@@ -4,6 +4,7 @@
 	<h1>Inserisci il nuovo Indirizzo</h1>
 	<form class="mt-4" action="User" method="post" onsubmit="event.preventDefault(); myfunction(this)">
 		<input type="hidden" name="action" value="createAddress">
+		
 		<div class="row">
 			<div class="col">
 				<div class="form-group">
