@@ -53,14 +53,13 @@
 					<div class="flex-spaced">
 						<div class="flex">
 							<img class="order-details-image"
-								src="https://source.unsplash.com/120x120/?sig=1&bouquet">
+								src="/MGCG/resources/images/corrierecamion.png">
 							<ul>
-								<li class="delivery-date">Boquet di rose rosse</li>
-								<li class="bouquet-name">Boquet di rose rosse</li>
+								<li class="delivery-date">Consegna domani</li>
 								<li class="bouquet-price mobile-hidden">
-									300,00 &euro;
+									30,00 &euro;
 								</li>
-								<li class="order-number">Breve descrizione</li>
+								<li class="order-number">Consegna Exspress</li>
 								<li class="invoice-links">
 									<a href="#" target="_blank" class="download-link"></a>
 									<a href="#" class="generate-invoice"></a>

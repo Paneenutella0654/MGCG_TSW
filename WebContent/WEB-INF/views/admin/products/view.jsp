@@ -7,7 +7,7 @@
 	<div class="products">
 		<div class="product">
 				<div class="images-big">
-					<img src="/MGCG/resources/images/products/${prod.getId()}.jpg"">
+					<img src="/MGCG/resources/images/products/${prod.getId()}.jpg">
 				</div>
 			</div>
 			<div class="right">

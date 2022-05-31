@@ -137,7 +137,7 @@ public class ProductDAO implements GenericDAO<Product> {
 
 		String inserSQL = "INSERT INTO " + ProductDAO.TABLE_NAME + " (name,description,shortDescription,"
 				+ "metaDescription,metaKeyword,price,available,"
-				+ "discount,onSale,quantity,tax) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+				+ "discount,onSale,quantity,tax) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		String updateSQL = "INSERT INTO categories_products (pid,cid) VALUES (?,?) ON DUPLICATE KEY UPDATE pid=pid";
 		try {
 			conn = ds.getConnection();
@@ -149,11 +149,11 @@ public class ProductDAO implements GenericDAO<Product> {
 			stmt.setString(4, dao.getMetaDescription());
 			stmt.setString(5, dao.getMetaKeyword());
 			stmt.setDouble(6, dao.getPrice());
-			stmt.setBoolean(8, dao.isAvailable());
-			stmt.setDouble(9, dao.getDiscount());
-			stmt.setInt(10, dao.getOnSale());
-			stmt.setInt(11, dao.getQuantity());
-			stmt.setInt(12, dao.getTax());
+			stmt.setBoolean(7, dao.isAvailable());
+			stmt.setDouble(8, dao.getDiscount());
+			stmt.setInt(9, dao.getOnSale());
+			stmt.setInt(10, dao.getQuantity());
+			stmt.setInt(11, dao.getTax());
 			LOGGER.debug(stmt);
 			stmt.execute();
 			ResultSet res  = stmt.getGeneratedKeys();

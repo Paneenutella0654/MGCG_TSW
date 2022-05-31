@@ -50,7 +50,7 @@
 						<div class="flex-spaced">
 							<div class="flex">
 								<img class="order-details-image"
-									src="https://source.unsplash.com/120x120/?sig=${order.getId()}&bouquet">
+									src="/MGCG/resources/images/orderimg.png">
 								<ul>
 									<li class="delivery-date">${order.getStatus()}</li>
 									<li class="bouquet-name"></li>
