@@ -107,7 +107,7 @@ public class AdminProductServlet extends HttpServlet {
 		//TODO Validate product form
 		Product product = new Product(request.getParameter("name"), request.getParameter("description"),
 				request.getParameter("shortDescription"), request.getParameter("metaDescription"),
-				request.getParameter("metaKeyword"), Double.parseDouble(request.getParameter("weight")),
+				request.getParameter("metaKeyword"),
 				Double.parseDouble(request.getParameter("price")),
 				Double.parseDouble(request.getParameter("discount")),
 				Integer.parseInt(request.getParameter("quantity")),

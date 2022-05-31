@@ -61,7 +61,7 @@ public class Product implements Serializable {
 	}
 	
 	public Product(String name, String description, String shortDescription, String metaDescription, String metaKeyword,
-			double weight, double price, double discount, int quantity, int onSale, boolean available) {
+			 double price, double discount, int quantity, int onSale, boolean available) {
 		this(0, name, description, shortDescription, metaDescription, metaKeyword, price, discount, quantity,
 				onSale, available);
 		

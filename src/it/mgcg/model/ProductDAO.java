@@ -136,7 +136,7 @@ public class ProductDAO implements GenericDAO<Product> {
 		PreparedStatement stmt3 = null;
 
 		String inserSQL = "INSERT INTO " + ProductDAO.TABLE_NAME + " (name,description,shortDescription,"
-				+ "metaDescription,metaKeyword,price,weight,available,"
+				+ "metaDescription,metaKeyword,price,available,"
 				+ "discount,onSale,quantity,tax) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		String updateSQL = "INSERT INTO categories_products (pid,cid) VALUES (?,?) ON DUPLICATE KEY UPDATE pid=pid";
 		try {
@@ -189,7 +189,7 @@ public class ProductDAO implements GenericDAO<Product> {
 	@Override
 	public synchronized int doUpdate(Product dao) throws SQLException {
 		String updateSQL = "UPDATE products p  " + "SET p.name = ?," + "p.description = ?," + "p.shortDescription = ?,"
-				+ "p.metaDescription = ?," + "p.metaDescription = ?," + "p.price = ?," + "p.weight = ?,"
+				+ "p.metaDescription = ?," + "p.metaDescription = ?," + "p.price = ?,"
 				+ "p.available = ?," + "p.discount = ?," + "p.onSale = ?," + "p.quantity = ?, " + "p.tax = ? " + "WHERE p.id = ? ";
 		String inserSQL = "INSERT INTO categories_products (pid,cid) VALUES (?,?) ON DUPLICATE KEY UPDATE pid=pid";
 		String deleteSQL_Category="DELETE FROM categories_products WHERE pid = ?";

@@ -6,16 +6,8 @@
 	<!-- Page to view details of a product -->
 	<div class="products">
 		<div class="product">
-			<div class="left">
-				<div class="images-small">
-					<img src="https://picsum.photos/100/100">
-					<img src="https://picsum.photos/100/100">
-					<img src="https://picsum.photos/100/100">
-					<img src="https://picsum.photos/100/100">
-					<img src="https://picsum.photos/100/100">
-				</div>
 				<div class="images-big">
-					<img src="https://picsum.photos/600/600">
+					<img src="/MGCG/resources/images/products/${prod.getId()}.jpg"">
 				</div>
 			</div>
 			<div class="right">
