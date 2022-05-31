@@ -29,13 +29,10 @@
         <input type="reset" value="Reset"/>
       </div>
     </form>
-
+ 
     <form action="Login" method="get">
-        <div class="form-group">
+        <div class="login-buttons">
             <input type="hidden" name="action" value="register">
-        </div>
-
-        <div>
             <p>Sei un nuovo utente?</p>
             <button type="submit" class="btn btn-success mt-2">Registarti ora!</button>
         </div>
