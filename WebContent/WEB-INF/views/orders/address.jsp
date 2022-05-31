@@ -58,7 +58,7 @@
 		<div class="form-group">
 			<label for="phone"></label>
 			<input type="text" class="form-control" name="phone" id="phone" aria-describedby="phoneHelp"
-				placeholder="3Numero di telefono a cui fare riferimento">
+				placeholder="Numero di telefono a cui fare riferimento">
 			
 		</div>
 		

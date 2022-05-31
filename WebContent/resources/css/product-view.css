@@ -61,6 +61,24 @@
 	padding-left: 15px;
 }
 
+.button.is-fullwidth {
+    display: flex;
+    width: 100%;
+    background-color: #C7485C !important;
+}
+
+.button.is-danger.is-hovered, .button.is-danger:hover {
+    background-color: #f03a5f !important;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-info {
+    background-color: #3298dc !important;
+    border-color: transparent;
+    color: #fff;
+}
+
 .single-review {
 	background-color: #fff;
 	padding: 14px 16px;

@@ -709,7 +709,7 @@ nav li:hover a{
 
 .footer a:hover{
 	color: #FFF;
-    background-color: #abd26a;
+    background-color: none;
     border-radius: 14px;
 }
 

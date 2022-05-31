@@ -89,7 +89,7 @@ html, body {
   transition: transform 0.5s;
 }
 .product-wrapper .product-container .product-bottom .product-left .product-buy:hover {
-  background: #A6CDDE;
+  background: #ABD26A;
 }
 .product-wrapper .product-container .product-bottom .product-left .product-buy:hover i {
   transform: translateY(5px);
@@ -97,7 +97,7 @@ html, body {
 }
 .product-wrapper .product-container .product-bottom .product-right {
   width: 50%;
-  background: #A6CDDE;
+  background: #ABD26A;
   color: white;
   float: right;
   height: 200%;
@@ -136,11 +136,11 @@ html, body {
   clear: both;
   border-right: solid thin rgba(255, 255, 255, 0.3);
   height: 75%;
-  background: #BC3B59;
+  background: #C7485C;
   transition: transform 0.5s, background 0.5s;
 }
 .product-wrapper .product-container .product-bottom .product-right .product-remove:hover {
-  background: #9B2847;
+  background: #C7485C;
 }
 .product-wrapper .product-container .product-bottom .product-right .product-remove:hover i {
   transform: translateY(25px);

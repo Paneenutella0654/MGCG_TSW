@@ -34,7 +34,7 @@
 				</li>
 				<li>
 					<a href="User?action=viewSubscription">
-						<p>Iscizione</p>
+						<p>Iscrizione</p>
 					</a>
 				</li>
 			</ul>
