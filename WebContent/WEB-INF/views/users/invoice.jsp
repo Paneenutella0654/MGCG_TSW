@@ -5,66 +5,62 @@
 <jsp:useBean id="now" class="java.util.Date" />
 
 <link href="resources/css/user-profile.css" rel="stylesheet" type="text/css">
-<link href="resources/css/invoice.css" rel="stylesheet" type="text/css">
+<link href="resources/css/invoice2.css" rel="stylesheet" type="text/css">
 
 <script src="resources/script/invoiceDow.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 
 <z:layout pageTitle="Invoice"> 
-
-	<div class="container">
-           
-            <div class="d_button">
+<header>
+	
+	<div>
+			<div class="d_button">
                 <button class="links" id="download"> Download PDF</button>
         	</div>
         	<c:if test="${pdf}">
         		<input type="hidden" id="pdf" value="download">
         	</c:if>
         	
-  	<div id="invoice">
-       		<h1 class="invoice">Invoice</h1>
-        	<div class="information_mgcg">
-        		<p class="mgcg_firm">Fattura</p>
-        		<span>
-        			Gerardo Frino CEO MGCG <br>
-	        		Sant'andrea di Conza AV 83053 <br>
-	        		+39 3287611874 // 082735658
- 				</span>
-	        	 	<div class="billing_time">
-							<c:set var = "now" value = '<%= new java.util.Date()%>' />
-							<p class="par_right" >
-								Data Fattura : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${now}" />
-			        		</p>	
-	        		</div>
-      		</div> 
-       			
-        	<div class="information_invoice">
-        		
-        	  <div class="time">	
-        		<c:set var = "orderDate" value = "${orderToShow.getCreateDate()}" />
-        		<p>Ordine eseguito il : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${orderDate}" /></p>
-        	     <p>${orderToShow.getDestination()}</p>
-        	      <p>Dettagli Utente: </p>
-	        	  	   <div class="pad">
-	        	  	   	<p> ${user.getFirstName()}</p>
-	        	 	    	<p>  ${user.getLastName()}</p>
-	        	 	     		<p>  ${user.getEmail()}</p> 
-	        	 	    </div>         	     
-        	  </div>	
-        	       
-                    <div class="table-responsive">
-                       <div class="div_table1">
-                        <table class="table table-lg">
-                            <thead>
-                                <tr>
-                                    <th>Descrizione</th>
-                                    <th>Quantità</th>
-                                    <th>Prezzo unitario</th>
-                                    <th>Sconto</th>
-                                    <th>Totale</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+        	
+        	
+			<h1>Invoice</h1>
+			<address >
+				<p>Gerardo Frino</p>
+				<p>101 E. Chapman Ave<br>Orange, CA 92866</p>
+				<p>(800) 555-1234</p>
+			</address>
+			<span><img alt="Logo" src="/MGCG/resources/images/logo.png"><input type="file" accept="image/*"></span>
+		</header>
+		<article>
+			<h1>Recipient</h1>
+			<address >
+				<p>Some Company<br>c/o Some Guy</p>
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span  >Invoice #</span></th>
+					<td><span  >101138</span></td>
+				</tr>
+				<tr>
+					<th><span  >Data</span></th>
+					<td><span  >January 1, 2012</span></td>
+				</tr>
+				<tr>
+					<th><span  >Amount Due</span></th>
+					<td><span id="prefix"  >$</span><span>${orderToShow.getTotalPaidString() }</span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span  >Description</span></th>
+						<th><span  >Quantita</span></th>
+						<th><span  >Prezzo Unitario</span></th>
+						<th><span  >Sconto</span></th>
+						<th><span  >Totale</span></th>
+					</tr>
+				</thead>
+				<tbody>
                             
                             	<c:forEach items="${orderToShow.getItems() }" var="items" >
                                 <tr>
@@ -81,55 +77,29 @@
                                </c:forEach>   
                                    
                             </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    
-                    
-
-                            <div class="div_table2">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th class="text-left">Subtotal:</th>
-                                                <td class="text-right">${orderToShow.getTotalPaidString() }</td>                                               
-                                            </tr>
-                                            <tr>
-                                                <th class="text-left">Tasse: <span class="font-weight-normal">(22%)</span></th>
-                                                <td class="text-right">TODO</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="text-left">Totale:</th>
-                                                <td class="text-right text-primary">
-                                                    <h5 class="font-weight-semibold">${orderToShow.getTotalPaidString()}</h5>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th class="text-left">Fattura #</th>
-                                                <td class="text-right text-primary">
-                                                    <h5 class="font-weight-semibold" id="track">${orderToShow.getTrackNumber()}</h5>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                             </div>       
-                                
-
-                            	</div>
- 	</div>		   	 		
- 	
- 		<div class="d_button" > <button  id="send" type="button" class="links"><b>
-		    <i class="fa fa-paper-plane-o mr-1"></i></b>Inviare la fattura</button> 
-		</div>	
- 		
- 		<div class="footer_B">
-				 <span class="text-muted">A cura del servizio finanziario Mgcg</span>
+			</table>
+			<table class="balance">
+				<tr>
+					<th><span  >Total</span></th>
+					<td><span data-prefix>$</span><span>${orderToShow.getTotalPaidString()}</span></td>
+				</tr>
+				<tr>
+					<th><span  >Amount Paid</span></th>
+					<td><span data-prefix>$</span><span  >0.00</span></td>
+				</tr>
+				<tr>
+					<th><span  >Balance Due</span></th>
+					<td><span data-prefix>$</span><span>${orderToShow.getTotalPaidString()}</span></td>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<h1><span  >Additional Notes</span></h1>
+			<div  >
+				<p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+			</div>
+		</aside>
 		</div>
-		
- </div>
-
 
 
 <script type="text/javascript">
