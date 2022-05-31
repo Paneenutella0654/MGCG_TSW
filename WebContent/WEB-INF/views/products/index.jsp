@@ -32,7 +32,7 @@
 			    <div class="product-bottom">
 			      <div class="product-left">
 			        <div class="product-details">
-			          <h1 class="title"><a href="<c:url value="/Products?action=view&id=${bean.getId()}"/>">${bean.getName()}</a></h1>
+			          <h3 class="title"><a href="<c:url value="/Products?action=view&id=${bean.getId()}"/>">${bean.getName()}</a></h3>
 			          <p class="subtitle">&euro; ${bean.getPrice()}</p>
 			        </div>
 			        <div id="productadd_${bean.getId()}" class="product-buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -40,7 +40,7 @@
 			      <div class="product-right">
 			        <div class="product-done"><i class="material-icons">fatto</i></div>
 			        <div class="product-details">
-			          <h1 class="title">${bean.getName()}</h1>
+			          <h3 class="title">${bean.getName()}</h3>
 			          <p class="subtitle">Aggiungi al carello</p>
 			        </div>
 			        <div id="productremove_${bean.getId()}" class="product-remove"><i class="material-icons">clear</i></div>

@@ -10,7 +10,7 @@
 			<div class="col">
 				<div class="form-group">
 					<label for="firstName">Nome</label>
-					<input type="text" class="form-control" name="firstName" id="firstName" 
+					<input type="text" class="form-control input" name="firstName" id="firstName" 
 					aria-describedby="firstNameHelp" value="${bean.getFirstName()}" required>
 					<small id="firstNameHelp" class="form-text text-muted">Nome destinatario</small>
 				</div>
@@ -18,7 +18,7 @@
 			<div class="col">
 				<div class="form-group">
 					<label for="lastName">Cognome</label>
-					<input type="text" class="form-control" name="lastName" id="lastName" aria-describedby="lastNameHelp" value="${bean.getLastName()}" required>
+					<input type="text" class="form-control input" name="lastName" id="lastName" aria-describedby="lastNameHelp" value="${bean.getLastName()}" required>
 					<small id="lastNameHelp" class="form-text text-muted">Cognome destinatario</small>
 				</div>
 			</div>
@@ -27,14 +27,14 @@
 			<div class="col-8">
 				<div class="form-group">
 					<label for="address">Indirizzo</label>
-					<input type="text" class="form-control" name="address" id="address" aria-describedby="addressHelp" value="${bean.getAddress()}" required>
+					<input type="text" class="form-control input" name="address" id="address" aria-describedby="addressHelp" value="${bean.getAddress()}" required>
 					<small id="lastNameHelp" class="form-text text-muted">Indirizzo di destinazione e numro civico</small>
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
-					<label for=postalCode>CAP</label>
-					<input type="text" class="form-control" name="postalCode" id="postalCode" aria-describedby="postalCodeHelp" value="${bean.getPostalCode()}" required>
+					<label for=postalCode>CAP</label> 
+					<input type="text" class="form-control input" name="postalCode" id="postalCode" aria-describedby="postalCodeHelp" value="${bean.getPostalCode()}" required>
 					<small id="postalCodeHelp" class="form-text text-muted">CAP di destinazione</small>
 				</div>
 			</div>
@@ -43,14 +43,14 @@
 			<div class="col-8">
 				<div class="form-group">
 					<label for="city">Città</label>
-					<input type="text" class="form-control" name="city" id="city" aria-describedby="cityHelp" value="${bean.getCity()}"required>
+					<input type="text" class="form-control input" name="city" id="city" aria-describedby="cityHelp" value="${bean.getCity()}"required>
 					<small id="lastNameHelp" class="form-text text-muted">Città di destinazione</small>
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
 					<label for="province">Provincia</label>
-					<input type="text" class="form-control" name="province" id="province" aria-describedby="provinceHelp" value="${bean.getProvince()}"required>
+					<input type="text" class="form-control input" name="province" id="province" aria-describedby="provinceHelp" value="${bean.getProvince()}"required>
 					<small id="provinceHelp" class="form-text text-muted">Sigla Provincia</small>
 				</div>
 			</div>
@@ -58,13 +58,13 @@
 		
 		<div class="form-group">
 			<label for="phone"></label>
-			<input type="text" class="form-control" name="phone" id="phone" aria-describedby="phoneHelp"value="${bean.getPhone()}">
+			<input type="text" class="form-control input" name="phone" id="phone" aria-describedby="phoneHelp"value="${bean.getPhone()}">
 			<small id="phoneHelp" class="form-text text-muted">Numero di telefono di riferimento</small>
 		</div>
 		
 		<div class="form-group">
 			<label for="info"></label>
-			<input type="text" class="form-control" name="info" id="info" aria-describedby="infoHelp" value="${bean.getInfo()}">
+			<input type="text" class="form-control input" name="info" id="info" aria-describedby="infoHelp" value="${bean.getInfo()}">
 			<small id="infoHelp" class="form-text text-muted">Informazioni aggiuntive per la consegna</small>
 		</div>
 		
@@ -79,7 +79,7 @@
 		
 		<div class="form-group">
 			<label for="alias"></label>
-			<input type="text" class="form-control" name="alias" id="alias" aria-describedby="aliasHelp"
+			<input type="text" class="form-control input" name="alias" id="alias" aria-describedby="aliasHelp"
 				placeholder="Home, Office..." value="${bean.getAlias()}"required>
 			<small id="Help" class="form-text text-muted">Inserisci un alias per questo indirizzo</small>
 		</div>

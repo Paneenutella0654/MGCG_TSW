@@ -45,7 +45,7 @@
 }
 
 .user-logout {
-	color: #48c774 !important;
+	color: red !important;
 	display: block;
 	flex-direction: column;
 	padding: 16px 0 16px 24px;
@@ -110,6 +110,14 @@
 	
 	.space{
 		padding-right: 30px ;
+	}
+	.invoice-links{
+	 margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    
 	}
 	
 @media only screen and (max-width: 620px) {

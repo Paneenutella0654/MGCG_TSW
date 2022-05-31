@@ -56,21 +56,16 @@
 								src="/MGCG/resources/images/corrierecamion.png">
 							<ul>
 								<li class="delivery-date">Consegna domani</li>
-								<li class="bouquet-price mobile-hidden">
-									30,00 &euro;
-								</li>
+						
 								<li class="order-number">Consegna Exspress</li>
+								
 								<li class="invoice-links">
 									<a href="#" target="_blank" class="download-link"></a>
 									<a href="#" class="generate-invoice"></a>
 								</li>
 							</ul>
 						</div>
-						<div class="flex">
-							<ul>
-								<li><a class="links" href="#">Modifica</a></li>
-							</ul>
-						</div>
+						
 					</div>
 				</div>
 			</div>	
