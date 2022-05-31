@@ -22,7 +22,7 @@
         	</c:if>
         	
   	<div id="invoice">
-  		<header>
+       		<header>
        		<h1>Fattura</h1>
 			<address >
 				<p>${user.getFirstName()}  ${user.getLastName()}</p>
@@ -44,7 +44,7 @@
 						<th><span>Totale</span></th>
 					</tr>
 				</thead>
-                            <tbody>
+                           <tbody>
                             
                             	<c:forEach items="${orderToShow.getItems() }" var="items" >
                                 <tr>
@@ -82,6 +82,12 @@
                                                 <th class="text-left">Totale:</th>
                                                 <td class="text-right text-primary">
                                                     <h5 class="font-weight-semibold">${orderToShow.getTotalPaidString()}</h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-left">Fattura #</th>
+                                                <td class="text-right text-primary">
+                                                    <h5 class="font-weight-semibold" id="track">${orderToShow.getTrackNumber()}</h5>
                                                 </td>
                                             </tr>
                                         </tbody>
