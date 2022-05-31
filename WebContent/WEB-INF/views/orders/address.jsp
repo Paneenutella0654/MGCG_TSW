@@ -9,16 +9,14 @@
 				<div class="form-group">
 					<label for="firstName">Nome</label>
 					<input type="text" class="form-control" name="firstName" id="firstName" aria-describedby="firstNameHelp"
-						placeholder="Mario..." required>
-					<small id="firstNameHelp" class="form-text text-muted">Nome di destinazione</small>
+						placeholder="Nome di destinazione" required>
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
 					<label for="lastName">Cognome</label>
 					<input type="text" class="form-control" name="lastName" id="lastName" aria-describedby="lastNameHelp"
-						placeholder="Rossi..." required>
-					<small id="lastNameHelp" class="form-text text-muted">Cognome destinazione</small>
+						placeholder="Cognome destinazione" required>
 				</div>
 			</div>
 		</div>
@@ -27,16 +25,14 @@
 				<div class="form-group">
 					<label for="address">Indirizzo</label>
 					<input type="text" class="form-control" name="address" id="address" aria-describedby="addressHelp"
-						placeholder="Via Roma, 12/A..." required>
-					<small id="lastNameHelp" class="form-text text-muted">Indirizzo di destinazione e numero civico</small>
+						placeholder="Indirizzo di destinazione e numero civico" required>
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
 					<label for=postalCode>CAP</label>
 					<input type="text" class="form-control" name="postalCode" id="postalCode" aria-describedby="postalCodeHelp"
-						placeholder="84100" required>
-					<small id="postalCodeHelp" class="form-text text-muted">Codice postale di destinazione</small>
+						placeholder="Codice postale di destinazione" required>
 				</div>
 			</div>
 		</div>
@@ -45,16 +41,16 @@
 				<div class="form-group">
 					<label for="city">Città</label>
 					<input type="text" class="form-control" name="city" id="city" aria-describedby="cityHelp"
-						placeholder="Milano..." required>
-					<small id="lastNameHelp" class="form-text text-muted">Città di destinazione</small>
+						placeholder="Città di destinazione" required>
+					
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
 					<label for="province">Provincia</label>
 					<input type="text" class="form-control" name="province" id="province" aria-describedby="provinceHelp"
-						placeholder="MI..." required>
-					<small id="provinceHelp" class="form-text text-muted">Abbreviazione della provincia di destinazione</small>
+						placeholder="Abbreviazione della provincia di destinazione" required>
+					
 				</div>
 			</div>
 		</div>
@@ -62,8 +58,8 @@
 		<div class="form-group">
 			<label for="phone"></label>
 			<input type="text" class="form-control" name="phone" id="phone" aria-describedby="phoneHelp"
-				placeholder="3929009...">
-			<small id="phoneHelp" class="form-text text-muted">Numero di telefono a cui fare riferimento</small>
+				placeholder="3Numero di telefono a cui fare riferimento">
+			
 		</div>
 		
 		<div class="form-group">

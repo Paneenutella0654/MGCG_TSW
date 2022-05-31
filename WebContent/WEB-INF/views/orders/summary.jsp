@@ -66,11 +66,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="flex">
-							<ul>
-								<li><a class="links" href="#">Modifica</a></li>
-							</ul>
-						</div>
+						
 					</div>
 				</div>
 			</div>	

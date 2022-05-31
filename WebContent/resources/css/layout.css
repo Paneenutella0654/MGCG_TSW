@@ -1,5 +1,12 @@
 /*#region Default Layout Css */
 @import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+:root
+{
+	--verde-nav:#abd26a;
+	--blu-nav:#6AABD2;
+	/*var(--colore)*/
+}
+
 *{
     margin:0;
     padding:0;
@@ -391,6 +398,17 @@ textarea {
     border-color: #6AABD2;
 }
 
+.button.is-info[disabled], fieldset[disabled] .button.is-info {
+    background-color: green !important;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.title {
+    font-size: 1.6em !important;
+    
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -409,7 +427,7 @@ a:link{
 a:hover{
 	font-weight: 600;
 	cursor: pointer;	
-/* 	color: #41d5ab; */
+ 	color: #363636 !important;
 }
 
 a:active{
