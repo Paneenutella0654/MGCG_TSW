@@ -4,7 +4,7 @@
 	<h3>Inserisci il nuovo Indirizzo</h3>
 	<form class="mt-4" action="User" method="post" onsubmit="event.preventDefault(); myfunction(this)">
 		<input type="hidden" name="action" value="createAddress">
-
+		
 		<div class="form-group">
 			<label for="firstName">Nome</label>
 			<input type="text" class="form-control input" name="firstName" id="firstName" aria-describedby="firstNameHelp"
@@ -23,7 +23,7 @@
 			<label for="address">Indirizzo</label>
 			<input type="text" class="form-control input" name="address" id="address" aria-describedby="addressHelp"
 				placeholder="Via Roma, 12/A..." required>
-				<small id="lastNameHelp" class="form-text text-muted">Indirizzo di destinazione e numro civico</small>
+				<small id="lastNameHelp" class="form-text text-muted">Indirizzo di destinazione e numero civico</small>
 		</div>
 			
 		<div class="form-group">
@@ -34,10 +34,10 @@
 		</div>
 	
 		<div class="form-group">
-			<label for="city">Cittï¿½</label>
+			<label for="city">Citta</label>
 			<input type="text" class="form-control input" name="city" id="city" aria-describedby="cityHelp"
 				placeholder="Milano..." required>
-				<small id="lastNameHelp" class="form-text text-muted">Cittï¿½ di destinazione</small>
+				<small id="lastNameHelp" class="form-text text-muted">Citta di destinazione</small>
 		</div>
 			
 		<div class="form-group">
@@ -90,7 +90,7 @@
 			if(phonenumber()) {
 				frm.submit();
 			} else {
-				alert("L'inserimento numerico non ï¿½ valido");
+				alert("L'inserimento numerico non è valido");
 			}
 		} else {
 			alert("Cap non valido");
