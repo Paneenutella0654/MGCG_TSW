@@ -13,6 +13,11 @@
 					<h2 class="title">Account</h2>
 				</li>
 				<li>
+					<a href="User?action=viewData">
+						<p>Data</p>
+					</a>
+				</li>
+				<li>
 					<a href="User?action=viewOrders" class="active">
 						<p>Ordini</p>
 					</a>
@@ -20,21 +25,6 @@
 				<li>
 					<a href="User?action=viewAddresses" class="active">
 						<p>Indirizzo</p>
-					</a>
-				</li>
-				<li>
-					<a href="User?action=wishList">
-						<p>Wish List</p>
-					</a>
-				</li>
-				<li>
-					<a href="User?action=viewData">
-						<p>Data</p>
-					</a>
-				</li>
-				<li>
-					<a href="User?action=viewSubscription">
-						<p>Iscrizione</p>
 					</a>
 				</li>
 			</ul>

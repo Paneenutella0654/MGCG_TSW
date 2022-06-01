@@ -85,3 +85,6 @@
 	border-radius: 14px;
 	margin-top: 15px;
 }
+
+.button.is-primary {
+    background-color: #6AABD2  !important;

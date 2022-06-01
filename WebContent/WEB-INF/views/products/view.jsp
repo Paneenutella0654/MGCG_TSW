@@ -36,6 +36,7 @@
 				</div>
 				<div class="product-description mt-4">
 					<p>${prod.getDescription()}</p>
+					<p>${prod.getPrice()}</p>
 				</div>
 	
 				<div class="product-action mt-4">
@@ -45,7 +46,7 @@
 						<button type="submit" class="button is-success" style="width:100%">Aggiungi al carrello</button>
 					</form>
 					<c:if test="${user != null}">
-						<button class="button is-primary mt-2" onclick="openModal()">Revisione</button>
+						<button class="button is-primary mt-2" onclick="openModal()">Recensione</button>
 					</c:if>
 				</div>
 			</div>
