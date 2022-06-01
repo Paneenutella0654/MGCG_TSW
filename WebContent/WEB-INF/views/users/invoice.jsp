@@ -94,20 +94,9 @@
                                     </table>
                                 </div>
                              </div>       
-                                
-
-                            	</div>
- 	</div>		   	 		
- 	
- 		<div class="d_button" > <button  id="send" type="button" class="links"><b>
-		    <i class="fa fa-paper-plane-o mr-1"></i></b>Inviare la fattura</button> 
-		</div>	
- 		
- 		<div class="footer_B">
-				 <span class="text-muted">A cura del servizio finanziario Mgcg</span>
-		</div>
-		
- </div>
+                            </div>
+ 						</div>		   		
+ 					</div>
 
 
 

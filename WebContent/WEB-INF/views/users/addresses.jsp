@@ -3,12 +3,17 @@
 <link href="resources/css/user-profile.css" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Profile">
 
-	<h1>Hi! ${user.getFirstName()} </h1>
+	<h1>Ciao! ${user.getFirstName()} </h1>
 	<div class="user-profile">
 		<div class="user-profile-menu">
 			<ul>
 				<li>
 					<h2 class="title">Account</h2>
+				</li>
+				<li>
+					<a href="User?action=viewData">
+						<p>Informazioni personali</p>  
+					</a>
 				</li>
 				<li>
 					<a href="User?action=viewOrders" class="active">
@@ -18,21 +23,6 @@
 				<li>
 					<a href="User?action=viewAddresses" class="active">
 						<p>Indirizzi</p>
-					</a>
-				</li>
-				<li>
-					<a href="User?action=wishList">
-						<p>Wish List</p>
-					</a>
-				</li>
-				<li>
-					<a href="User?action=viewData">
-						<p>Data di nascità</p>     <!-- controllare se e corretto -->
-					</a>
-				</li>
-				<li>
-					<a href="User?action=viewSubscription">
-						<p>Iscrizione</p>
 					</a>
 				</li>
 			</ul>

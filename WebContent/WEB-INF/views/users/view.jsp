@@ -11,6 +11,11 @@
 					<h2 class="title">Account</h2>
 				</li>
 				<li>
+					<a href="User?action=viewData" class="active">
+						<p>Informazioni personali</p>
+					</a>
+				</li>
+				<li>
 					<a href="User?action=viewOrders" class="active">
 						<p>Ordini</p>
 					</a>
@@ -20,21 +25,7 @@
 						<p>Indirizzi</p>
 					</a>
 				</li>
-				<li>
-					<a href="User?action=wishList">
-						<p>Wish List</p>
-					</a>
-				</li>
-				<li>
-					<a href="User?action=viewData">
-						<p>Data</p>
-					</a>
-				</li>
-				<li>
-					<a href="User?action=viewSubscription">
-						<p>Iscrizione</p>
-					</a>
-				</li>
+				
 			</ul>
 			<a class="user-logout" href="Login?action=logout">Logout</a>
 		</div>
@@ -53,14 +44,10 @@
 									src="/MGCG/resources/images/orderimg.png">
 								<ul>
 									<li class="delivery-date">${order.getStatus()}</li>
-									<li class="bouquet-name"></li>
-									<li class="bouquet-price mobile-hidden">
 										${order.getTotalPaidString() }&euro;
 										<span>, con sconto</span>
-									</li>
 									<li class="order-number">Ordine numero ${order.getId()}</li>
 									<li class="invoice-links">
-										<a href="#" onclick="target(${order.getId()})" class="download-link">Scarica Fattura</a>
 										<a href="User?action=invoiceView&orderId=${order.getId()}" target="_blank" class="generate-invoice">Genera fattura</a>
 									</li> 
 								</ul> 
