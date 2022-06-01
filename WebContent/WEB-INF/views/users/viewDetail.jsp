@@ -5,7 +5,7 @@
 <jsp:useBean id="now" class="java.util.Date" />
 
 <link href="resources/css/user-profile.css" rel="stylesheet" type="text/css">
-<link href="resources/css/invoice.css" rel="stylesheet" type="text/css">
+<link href="resources/css/invoice2.css" rel="stylesheet" type="text/css">
 
 <script src="resources/script/invoiceDow.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
@@ -13,51 +13,38 @@
 <z:layout pageTitle="Order Details"> 
 
 <div class="containerDetails" >  	
-  	<div id="Details" style="background-image: radial-gradient(ellipse, rgba(57, 215, 156, 1) 0%, rgba(247, 25, 136, 0) 100%);">
-       		<h1 class="invoice">Dettagli Ordine</h1>
-        	<div class="information_mgcg">
-        		<p class="mgcg_firm">MGCG</p>
-        		<span>
-        			grazie mille per aver acquistato da noi	
- 				</span>
-      		</div> 
-       			
-       			
-        	<div class="information_invoice">     		
-        	  <div class="time">	
-        		<c:set var = "orderDate" value = "${orderToShow.getCreateDate()}" />
-        		<p>Ordine eseguito il : <fmt:formatDate type = "both" dateStyle = "short" timeStyle = "short" value = "${orderDate}" /></p>
-        	     <p>${orderToShow.getDestination()}</p>
-        	      <p>Dettagli Utente: </p>
-	        	  	   <div class="pad">
-	        	  	   	<p> ${user.getFirstName()}</p>
-	        	 	    	<p>  ${user.getLastName()}</p>
-	        	 	     		<p>  ${user.getEmail()}</p> 
-	        	 	    </div>         	     
-        	  </div>	
+  	<div id="invoice">
+       		<header>
+       		<h1>Dettagli Ordine</h1>
+			<address >
+				<p>${user.getFirstName()}  ${user.getLastName()}</p>
+				<p>${user.getEmail()}</p>
+			</address>
+			<span><img alt="" src="/MGCG/resources/images/Logo.pbg"><input type="file" accept="image/*"></span>
+       			</header>
+        	<div class="information_invoice">
         	       
                     <div class="table-responsive">
                        <div class="div_table1">
                         <table class="table table-lg">
-                            <thead>
-                                <tr>
-                                    <th>Descizione</th>
-                                    <th>Quantità</th>
-                                    <th>Prezzo Unitario</th>
-                                    <th>Sconto</th>
-                                    <th>Totale</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                            				<thead>
+					<tr>
+						<th><span>Item</span></th>
+						<th><span>Quantita</span></th>
+						<th><span>Prezzo Unitario</span></th>
+						<th><span>Sconto</span></th>
+						<th><span>Totale</span></th>
+					</tr>
+				</thead>
+                           <tbody>
                             
                             	<c:forEach items="${orderToShow.getItems() }" var="items" >
                                 <tr>
                                     <td>
-	                                        <p class="mb-0">${items.getName()}
-	                                        				<br> ${items.getShortDescription()} </p>
-                                    </td>  
+	                                        <p class="mb-0">${items.getName()}</p>
+                                    </td>
                                     <td>${items.getQuantity()}</td>
-                                    <td>${items.getPriceString() }</td>
+                                    <td>${items.getPriceString()}</td>
 	                                <td>${items.getDiscountString()}</td>                             
                                     <td><span class="font-weight-semibold"> 
                                     		${items.getPrice()*items.getQuantity()} </span></td>
@@ -69,7 +56,9 @@
                       </div>
                     </div>
                     
-                  
+                    <br>
+                    <br>
+
                             <div class="div_table2">
                                 <div class="table-responsive">
                                     <table class="table">
@@ -79,8 +68,8 @@
                                                 <td class="text-right">${orderToShow.getTotalPaidString() }</td>                                               
                                             </tr>
                                             <tr>
-                                                <th class="text-left">Tasse: <span class="font-weight-normal">(22%)</span></th>
-                                                <td class="text-right">TODO</td>
+                                                <th class="text-left">Tasse: <span class="font-weight-normal"></span></th>
+                                                <td class="text-right">22%</td>
                                             </tr>
                                             <tr>
                                                 <th class="text-left">Totale:</th>
@@ -96,10 +85,10 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                 </div>
-             </div>       
-        </div>
- 	</div>
+                                </div>
+                             </div>       
+                            </div>
+ 						</div>
  	
  		<div>
  			<form method="get" action="User">

@@ -78,26 +78,16 @@
 					<button class="links" type="submit">Compra ora</button>
 				</div>
 				<hr>
-				<h2>Riepilogo dell'ordine</h2>
-				<div>
-					<div><p>Prodotti</p></div>
-					<div><p>13.90 &euro;</p></div>
-					
-				</div>
 				<div>
 					<div><p>Spese di spedizione</p></div>
-					<div><p>0.00 &euro;</p></div>
+					<div><p>10.00 &euro;</p></div>
 				</div>
-				<hr>
-				<div>
-					<div><h2>Totale ordine</h2></div>
-					<div><h2>13.90 &euro;</h2></div>
-				</div>
-				<h3>Tasse incluse</h3>
+				<br>
+				<h3>Tasse incluse  22%</h3>
 				<div class="form-check mb-4">
 					<input class="form-check-input" type="checkbox" value="" name="isGift" id="isGift">
 					<label class="form-check-label" for="isGift">
-						è un regalo
+						E' un regalo
 					</label>
 				</div>
 			

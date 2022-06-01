@@ -5,7 +5,7 @@
 <link href="<c:url value="/resources/css/product-view.css"/>" rel="stylesheet" type="text/css">
 <script src="https://cdn.jsdelivr.net/npm/smooth-zoom@latest/dist/zoom.browser.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/script/okZoom.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/script/okZoomn.js"></script>  <!-- Va messo okZoom per funzionare -->
 
 
 
