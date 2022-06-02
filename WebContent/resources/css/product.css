@@ -136,11 +136,11 @@ html, body {
   clear: both;
   border-right: solid thin rgba(255, 255, 255, 0.3);
   height: 75%;
-  background: #C7485C;
+  background: #CC1E39;
   transition: transform 0.5s, background 0.5s;
 }
 .product-wrapper .product-container .product-bottom .product-right .product-remove:hover {
-  background: #C7485C;
+  background: #CC1E39;
 }
 .product-wrapper .product-container .product-bottom .product-right .product-remove:hover i {
   transform: translateY(25px);

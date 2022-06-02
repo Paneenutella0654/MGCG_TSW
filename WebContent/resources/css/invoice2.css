@@ -29,7 +29,9 @@ span[contenteditable] { display: inline-block; }
 */
 /* heading */
 
-h1 { font: bold 100% sans-serif; letter-spacing: 0.5em; text-align: center; text-transform: uppercase; }
+h1 { 
+	font: bold 100% sans-serif; letter-spacing: 0.5em; text-align: center; text-transform: uppercase;
+	 }
 
 /* table */
 
@@ -55,9 +57,9 @@ header:after { clear: both; content: ""; display: table; }
 
 .d_button{
 	padding-bottom: 20px;
-	padding-top :20px;
 	text-align: left; 
-	
+	float: right;
+	padding-top: 15px
 }
 
 .div_table1{

@@ -15,7 +15,6 @@ img {
     min-height: 1px;
     padding-right: 30px;
     padding-left: 15px;
-    
 }
 
 .desc_img_cont_in {
@@ -41,6 +40,8 @@ img {
     display: block;
     max-width: 60px;
     height: auto;
+    border: 3px solid #ABD26A;
+  	border-radius: 30px;
 }
 
 #coloumn_cont {

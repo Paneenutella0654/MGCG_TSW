@@ -41,7 +41,7 @@
 			        <div class="product-done"><i class="material-icons">fatto</i></div>
 			        <div class="product-details">
 			          <h3 class="title">${bean.getName()}</h3>
-			          <p class="subtitle">Aggiungi al carello</p>
+			          <p class="subtitle">Aggiungi al carrello</p>
 			        </div>
 			        <div id="productremove_${bean.getId()}" class="product-remove"><i class="material-icons">clear</i></div>
 			      </div>

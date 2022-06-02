@@ -13,11 +13,7 @@
 <z:layout pageTitle="Invoice"> 
 
 	<div class="container">
-           
-            <div class="d_button">
-                <button class="links" id="download"> Download PDF</button>
-        	</div>
-        	<c:if test="${pdf}">
+           	<c:if test="${pdf}">
         		<input type="hidden" id="pdf" value="download">
         	</c:if>
         	
@@ -96,7 +92,10 @@
                                 </div>
                              </div>       
                             </div>
- 						</div>		   		
+ 						</div>	
+ 						<div class="d_button">
+            				<button class="links" id="download"> Download PDF</button>
+        				</div>	   		
  					</div>
 
 

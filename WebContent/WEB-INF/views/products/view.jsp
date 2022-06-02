@@ -95,14 +95,14 @@
 		      	<i class="fa fa-star fa-2x is-clickable has-text-warning" id="4-star" onclick="starClicked(this)"></i>
 		      	<i class="fa fa-star fa-2x is-clickable has-text-white-ter" id="5-star" onclick="starClicked(this)"></i>
 		      	<label class="label">Aggiungi un titolo</label>
-		      	<input class="input" type="text" name="title" id="title" placeHolder="Important things to know">
+		      	<input class="input" type="text" name="title" id="title">
 		      	<label class="label">Aggiungi una recensione</label>
-		      	<textarea class="textarea" name="body" id="body" placeHolder="What you liked and you didn't like..."></textarea>
+		      	<textarea class="textarea" name="body" id="body" placeHolder="Descrivi il prodotto..."></textarea>
 		      </form>
 		    </section>
 		    <footer class="modal-card-foot">
 		      <button class="button is-success" id="reviewSubmit">Invia</button>
-		      <button class="button" onclick="closeModal()">Elimina</button>
+		      <button class="button is-danger" onclick="closeModal()">Elimina</button>
 		    </footer>
 		  </div>
 		</div>

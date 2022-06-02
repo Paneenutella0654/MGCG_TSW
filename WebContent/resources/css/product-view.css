@@ -64,7 +64,7 @@
 .button.is-fullwidth {
     display: flex;
     width: 100%;
-    background-color: #C7485C !important;
+    background-color: #CC1E39 !important;
 }
 
 .button.is-danger.is-hovered, .button.is-danger:hover {
