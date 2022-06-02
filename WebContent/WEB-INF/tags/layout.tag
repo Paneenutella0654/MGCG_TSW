@@ -93,7 +93,7 @@
 		</div>
 		<!-- Copyright -->  
 		<div class="footer-right">
-			<a class="anchorMgcg" href="/Home">@2022 Copyright: MGCG Software house</a>
+			<a class="anchorMgcg" href="<c:url value="/Home"/>">@2022 Copyright: MGCG Software house</a>
 		</div>
 	</div>
 	<!-- Footer -->

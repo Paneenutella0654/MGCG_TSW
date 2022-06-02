@@ -43,7 +43,7 @@
 				</div>
 				<div class="actions">
 					<ul>
-						<li><a class="links" href="#">Inserisci</a></li>
+						<li><a href="<c:url value="/Payment"/>">Inserisci</a></li>
 					</ul>
 				</div>
 			</div>
