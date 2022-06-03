@@ -57,7 +57,7 @@
 		 	</c:if>
 	 	</div>
 	 	<div class="actions">
-	 		<a href="<c:url value="/Admin/Orders?action=edit&id=${order.getId()}"/>" class="btn btn-success">Visualizzazione</a>
+	 		<a href="<c:url value="/Admin/Orders?action=view&id=${order.getId()}"/>" class="btn btn-success">Visualizzazione</a>
     		<a href="<c:url value="/Admin/Orders?action=edit&id=${order.getId()}"/>" class="btn btn-primary">Modifica</a>
     		<form action="<c:url value="/Admin/Orders"/>" method="post">
     			<input type="hidden" name="action" id="action" value="delete">
