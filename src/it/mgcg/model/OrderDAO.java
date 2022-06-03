@@ -279,10 +279,14 @@ public class OrderDAO implements GenericDAO<Order> {
 
 		return 0;
 	}
-
+	
+	/*Il doDelite funziona solo quando anche l'utente e stato eliminanto poiche nella tabella ordine
+	 c'e un riferimento alla tabella utente ed essendo che e in modalita restrict voule prima l'elimanzione della 
+	 chiave esterna (l'utente)*/
+	
 	@Override
 	public boolean doDelete(int code) throws SQLException {
-		String deleteSQL = " DELETE * FROM " + TABLE_NAME + " WHERE id = ? ";
+		String deleteSQL = "DELETE FROM "+ TABLE_NAME +" WHERE  `id`= ? "; 
 		int rs;
 		try (var conn = ds.getConnection()) {
 			try (var stmt = conn.prepareStatement(deleteSQL)) {

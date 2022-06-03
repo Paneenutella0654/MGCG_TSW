@@ -87,7 +87,6 @@ public class AdminOrderServlet extends HttpServlet {
 
 	private void doView(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO view single order detail page
-		// http://localhost/beflral/admin/orders?action=view&id=1
 		try {
 			if (request.getParameter("action").equals("view") && request.getParameter("id") != null) {
 				int id = Integer.parseInt(request.getParameter("id"));
@@ -154,8 +153,7 @@ public class AdminOrderServlet extends HttpServlet {
 				int id = Integer.parseInt(request.getParameter("id"));
 				var order = model.doRetriveByKey(id);
 				request.setAttribute("bean", order);
-				RequestDispatcher dispatcher = request.getServletContext()
-						.getRequestDispatcher("/WEB-INF/views/admin/orders/edit.jsp");
+				RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/WEB-INF/views/admin/orders/edit.jsp");
 				dispatcher.forward(request, response);
 				return;
 			}
@@ -164,25 +162,22 @@ public class AdminOrderServlet extends HttpServlet {
 			System.out.println("Error:" + e.getMessage());
 		}
 		
-		// http://localhost/beflral/admin/orders?action=view&id=1
 
 	}
 
 	@Override
-	protected void doDelete(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO delete order from db (only id needed)
-		int orderid = Integer.parseInt(request.getParameter("id"));// TAKE id of order
-		OrderDAO dao = new OrderDAO();
-
+		OrderDAO order = new OrderDAO();
 		try {
-			boolean risp = dao.doDelete(orderid);
-
-			// Rispondi TODO
-
+			 order.doDelete(Integer.parseInt(request.getParameter("id")));
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+			System.out.println("Error with delete order id" + request.getParameter("id"));
 		} catch (SQLException e) {
-
 			e.printStackTrace();
 		}
+		response.sendRedirect(getServletContext().getContextPath()+"/Admin/Orders");
 	}
 
 	@Override
