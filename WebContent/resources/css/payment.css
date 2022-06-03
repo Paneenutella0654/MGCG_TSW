@@ -1,4 +1,4 @@
-body {
+/*body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -17,7 +17,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-family: 'Raleway';
-}
+}*/
 
 .payment-title {
     width: 100%;
@@ -56,8 +56,9 @@ body {
     grid-template-rows: 90px 90px 90px;
     grid-template-areas: "name name""number number""expiration security";
     max-width: 400px;
-    padding: 20px;
     color: #707070;
+    float: right;
+    margin-top: -250px;
 }
 
 label {
@@ -83,15 +84,19 @@ input {
 }
 
 /* CREDIT CARD IMAGE STYLING */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
 
-
-.container-preload {
+.container {
     width: 100%;
     max-width: 400px;
     max-height: 251px;
     height: 54vw;
     padding: 20px;
-    margin-top:-40%;
 }
 
 #ccsingle {
@@ -351,3 +356,11 @@ input {
     transform: rotateY(180deg);
 }
 
+.links{
+	float:right;
+	background-color: #48c774;
+	    border-color: transparent;
+    color: #fff;
+    padding: 4px;
+    border-radius: 9px;
+}

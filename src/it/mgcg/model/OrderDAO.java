@@ -282,7 +282,7 @@ public class OrderDAO implements GenericDAO<Order> {
 
 	@Override
 	public boolean doDelete(int code) throws SQLException {
-		String deleteSQL = "DELETE * FROM " + TABLE_NAME + "WHERE id = ?";
+		String deleteSQL = " DELETE * FROM " + TABLE_NAME + " WHERE id = ? ";
 		int rs;
 		try (var conn = ds.getConnection()) {
 			try (var stmt = conn.prepareStatement(deleteSQL)) {
