@@ -9,7 +9,7 @@
 	<button class="delete" onclick="closeNotification()">X</button>
 	<span id="notification-text">Test</span></div>
 	<div class="payment-title">
-        <h1>Payment Information</h1>
+        <h1>Informazioni Pagamento</h1>
     </div>
     <div class="container preload">
         <div class="creditcard">
