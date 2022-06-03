@@ -134,13 +134,12 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js'></script>
     <script  src="resources/script/payment.js"></script>	
 	<br>
-		<div class="right">
-			<form action="Orders" method="post">
-				<input type="hidden" name="action" value="buy"/>
-				<div class="right-buy">
-					<button class="links" type="submit">Compra ora</button>
-				</div>
-			</form>
-		</div>
-		
+	<div class="right">
+			 <form action="Orders" method="post">
+                <input type="hidden" name="action" value="buy"/>
+                <div class="right-buy">
+                    <button class="links" type="submit">Compra ora</button>
+				   </div>
+            </form>
+        </div>
 </z:layout>
