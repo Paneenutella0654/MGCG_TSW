@@ -1,13 +1,18 @@
 <%@taglib prefix="z" tagdir="/WEB-INF/tags"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<z:layout pageTitle="Pagamento">
+
 <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt|Source+Code+Pro:300,400,600" rel="stylesheet">
 <link href="resources/css/payment.css" rel="stylesheet" type="text/css">
-<z:layout pageTitle="Pagamneto">
-	<div id="notification" class="notification is-hidden"><button class="delete" onclick="closeNotification()">X</button><span id="notification-text">Test</span></div>
+<link href="resources/css/home.css" rel="stylesheet" type="text/css">
+
+<div id="notification" class="notification is-hidden">
+	<button class="delete" onclick="closeNotification()">X</button>
+	<span id="notification-text">Test</span></div>
 	<div class="payment-title">
         <h1>Payment Information</h1>
     </div>
-    <div class="container preload">
+    <div class="container-preload">
         <div class="creditcard">
             <div class="front">
                 <div id="ccsingle"></div>

@@ -42,9 +42,8 @@
 					<p><b>Mastercard</b> termina con **62</p>
 				</div>
 				<div class="actions">
-					<ul>
-						<li><a href="<c:url value="/Payment"/>">Inserisci</a></li>
-					</ul>
+						<button id="btn-inserisci" class="button is-success">
+						<a href="<c:url value="/Payment"/>">Inserisci</a></button>
 				</div>
 			</div>
 			<hr>
@@ -113,7 +112,7 @@
 	 			</section>
 				<footer class="modal-card-foot">
 					<a class="button is-success" href="<c:url value="/User?action=createAddress"/>">Crea nuovo indirizzo</a>
-					<button id="btn-addressModalCancel" class="button">Cancella</button>
+					<button id="btn-addressModalCancel" class="button is-danger">Cancella</button>
 				</footer>
 			</div>
 		</div>
