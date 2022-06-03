@@ -6,6 +6,7 @@
 <link href="resources/css/payment.css" rel="stylesheet" type="text/css">
 <link href="resources/css/home.css" rel="stylesheet" type="text/css">
 
+
 <div id="notification" class="notification is-hidden">
 	<button class="delete" onclick="closeNotification()">X</button>
 	<span id="notification-text">Test</span></div>
@@ -133,26 +134,14 @@
         </div>
     </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js'></script>
-
-  
-
     <script  src="resources/script/payment.js"></script>
-	
-	
-	
-	
-	
-	
-		<div class="right">
+    <br>
+    <div>
 			<form action="Orders" method="post">
 				<input type="hidden" name="action" value="buy"/>
 				<div class="right-buy">
 					<button class="links" type="submit">Compra ora</button>
 				</div>
-				<hr>
 			</form>
 		</div>
-		
-		
-	</div>
 </z:layout>
