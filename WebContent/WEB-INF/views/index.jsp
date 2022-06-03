@@ -13,7 +13,7 @@
 	
 	<div>
 		<video autoplay="" muted="" loop="" playsinline="" width="400">
-			<source src="resources/video/Video_sito.mp4" type="video/mp4">
+			<source src="resources/video/video.mp4" type="video/mp4">
 		</video>	
 	</div>
 	
@@ -23,8 +23,8 @@
            		<img class="img-responsive desc_img" src="resources/images/car.png" />
         	</div>
        		<div class="desc_txt_in">
-            	<h2 class="title_text2">Autoricambi.it</h2>
-            <p class="par">Mgcg è un'™impresa dinamica, composta da professionisti attivi da più di 20 anni nel settore
+            	<h2 class="title_text2">Autoricambi.</h2>
+            <p class="par">Mgcg, composta da professionisti attivi da piu di 20 anni nel settore
             e si occupa di reintrodurre nel mercato i ricambi riutilizzabili degli autoveicoli.</p>
         </div>
     </div>
@@ -36,7 +36,7 @@
         </div>
         <div class="desc_txt_in">
             <h2 class="title_text2">Risparmio</h2>
-            <p class="par">Fiducia, qualità  e risparmio sono i principi su cui puntiamo per creare un rapporto solido con i clienti, 
+            <p class="par">Fiducia, qualitï¿½ e risparmio sono i principi su cui puntiamo per creare un rapporto solido con i clienti, 
             sia privati che professionisti del settore.</p>
         </div>
     </div>
@@ -50,7 +50,7 @@
         <div class="desc_txt_in">
             <h2 class="title_text2">Riciclo</h2>
             <p class="par"> Ogni ricambio funzionante, recuperato e riutilizzato, comporta la diminuzione della produzione industriale di ricambi nuovi,
-            alleviando in questo modo l'€™impatto ambientale.</p>
+            alleviando in questo modo l'ï¿½ï¿½impatto ambientale.</p>
         </div>
     </div>
 </div>	  
