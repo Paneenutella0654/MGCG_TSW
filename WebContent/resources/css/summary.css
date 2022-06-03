@@ -51,3 +51,11 @@
     padding-inline-start: 0;
     margin-top: 0;
 }
+
+a{
+	color: white !important;
+}
+
+button:hover{
+	color:black !important;
+}

@@ -83,19 +83,15 @@ input {
 }
 
 /* CREDIT CARD IMAGE STYLING */
-.preload * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-}
 
-.container {
+
+.container-preload {
     width: 100%;
     max-width: 400px;
     max-height: 251px;
     height: 54vw;
     padding: 20px;
+    margin-top:-40%;
 }
 
 #ccsingle {
@@ -354,3 +350,4 @@ input {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
+

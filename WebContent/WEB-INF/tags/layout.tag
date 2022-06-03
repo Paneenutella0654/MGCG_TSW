@@ -20,7 +20,7 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://kit.fontawesome.com/442bbb4090.js" crossorigin="anonymous"></script>
 	<!-- Navbar -->
-	
+   
 	<div id="navbar" class="main-bar">
         <nav>
             <input type="checkbox" id="check">
@@ -29,6 +29,7 @@
                 <span></span>
                 <span></span>
             </label>
+            
             
             <div class="logo-header">
                 <a href="<c:url value="/Home"/>">MGCG</a>
