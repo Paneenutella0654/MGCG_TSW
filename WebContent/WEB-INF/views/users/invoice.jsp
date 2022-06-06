@@ -81,6 +81,12 @@
                                                     <h5 class="font-weight-semibold">${orderToShow.getTotalPaidString()}</h5>
                                                 </td>
                                             </tr>
+                                             <tr>
+                                                <th class="text-left">MGCG Autoricambi</th>
+                                                <td class="text-right text-primary">
+                                                    <h5 class="font-weight-semibold" id="track">${orderToShow.getTrackNumber()}</h5>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
