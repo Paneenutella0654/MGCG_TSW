@@ -33,7 +33,4 @@
   </tr>
   </c:forEach>		
 </table>
- <a href="Admin/Orders?action=edit&id=${bean.getId()}">
-					<button type="submit" class="btn btn-primary">Modifica ordine</button>
-  </a>
 </z:layout>
