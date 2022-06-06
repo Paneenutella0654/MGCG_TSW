@@ -52,36 +52,20 @@
 			    <div class="contents">
 			      <table>
 			        <tr>
-			          <th>Width</th>
-			          <th>Height</th>
+			          <th>Paese di Produzione</th>
+			          <th>Originale </th>
 			        </tr>
 			        <tr>
-			          <td>3000mm</td>
-			          <td>4000mm</td>
+			          <td>Italia</td>
+			          <td>SI</td>
 			        </tr>
 			        <tr>
-			          <th>Something</th>
-			          <th>Something</th>
+			          <th>Marca</th>
+			          <th>Id Prodotto</th>
 			        </tr>
 			        <tr>
-			          <td>200mm</td>
-			          <td>200mm</td>
-			        </tr>
-			        <tr>
-			          <th>Something</th>
-			          <th>Something</th>
-			        </tr>
-			        <tr>
-			          <td>200mm</td>
-			          <td>200mm</td>
-			        </tr>
-			        <tr>
-			          <th>Something</th>
-			          <th>Something</th>
-			        </tr>
-			        <tr>
-			          <td>200mm</td>
-			          <td>200mm</td>
+			          <td>${bean.getMetaKeyword()}</td>
+			          <td>${bean.getId()}</td>
 			        </tr>
 			      </table>
 			    </div>

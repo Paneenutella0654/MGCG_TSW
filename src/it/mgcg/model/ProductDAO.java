@@ -209,12 +209,12 @@ public class ProductDAO implements GenericDAO<Product> {
 			stmt.setString(4, dao.getMetaDescription());
 			stmt.setString(5, dao.getMetaKeyword());
 			stmt.setDouble(6, dao.getPrice());
-			stmt.setBoolean(8, dao.isAvailable());
-			stmt.setDouble(9, dao.getDiscount());
-			stmt.setInt(10, dao.getOnSale());
-			stmt.setInt(11, dao.getQuantity());
-			stmt.setInt(12, dao.getTax());
-			stmt.setInt(13, dao.getId());		
+			stmt.setBoolean(7, dao.isAvailable());
+			stmt.setDouble(8, dao.getDiscount());
+			stmt.setInt(9, dao.getOnSale());
+			stmt.setInt(10, dao.getQuantity());
+			stmt.setInt(11, dao.getTax());
+			stmt.setInt(12, dao.getId());		
 			LOGGER.debug(stmt);
 			result = stmt.executeUpdate();
 			
