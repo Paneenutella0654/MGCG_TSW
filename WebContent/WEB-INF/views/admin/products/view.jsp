@@ -12,7 +12,7 @@
 			</div>
 			<div class="right">
 				<div class="product-title">
-					<h1>${prod.getName()}</h1>
+					<h1 class="is-size-4">${prod.getName()}</h1>
 				</div>
 				<div class="product-description mt-4">
 					<p>${prod.getDescription()}</p>

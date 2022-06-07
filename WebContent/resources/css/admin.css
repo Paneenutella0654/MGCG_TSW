@@ -5,6 +5,7 @@
     margin-bottom: 20px;
     border-radius: 14px;
     display: flex;
+    margin-top: 4rem;
 }
 
 .admin-order .body {
@@ -15,7 +16,7 @@
 	display: flex;
     flex-grow: 1;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: .5rem;
 }
 
 .admin-pages {
@@ -37,4 +38,8 @@
     border-style: solid;
     border-radius: 7px;
     border-width: 1px;
+}
+
+.admin-logout{
+	color: red !important;
 }

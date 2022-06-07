@@ -3,7 +3,7 @@
 <link href="resources/css/product.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <z:layout pageTitle="Admin Product Create">
-	<h1>Crea un nuovo Prodotto</h1>
+	<h1 class="is-size-3">Crea un nuovo Prodotto</h1>
 	<form action="<c:url value="/Admin/Products" />" method="post">
 		<input type="hidden" name="action" value="create">
 		<div class="form-group">

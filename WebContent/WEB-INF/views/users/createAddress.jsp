@@ -1,7 +1,7 @@
 <%@taglib prefix="z" tagdir="/WEB-INF/tags"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <z:layout pageTitle="Add Address">
-	<h3>Inserisci il nuovo Indirizzo</h3>
+	<h3 class="is-size-4">Inserisci il nuovo Indirizzo</h3>
 	<form class="mt-4" action="User" method="post" onsubmit="event.preventDefault(); myfunction(this)">
 		<input type="hidden" name="action" value="createAddress">
 		

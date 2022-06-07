@@ -1,7 +1,7 @@
 <%@taglib prefix="z" tagdir="/WEB-INF/tags"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <z:layout pageTitle="Edit Address">
-<h1>Modifica Indirizzo N. ${bean.getId()}</h1>
+<h1 class="is-size-3">Modifica Indirizzo N. ${bean.getId()}</h1>
 
 <form class="mt-4" action="User" method="post" onsubmit="event.preventDefault(); myfunction(this)">
 		<input type="hidden" name="action" value="editAddress">

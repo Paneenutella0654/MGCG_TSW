@@ -5,7 +5,7 @@
 <z:layout pageTitle="MyData">
  
   
-	<h1 class="is-size-1 has-text-weight-semibold">Ciao! ${user.getFirstName()} </h1>
+	<h1 class="is-size-3 has-text-weight-semibold">Ciao! ${user.getFirstName()} </h1>
 	<div class="user-profile">
 		<div class="user-profile-menu">
 			<ul>
@@ -14,7 +14,7 @@
 				</li>
 				<li>
 					<a href="User?action=viewData">
-						<p>Data</p>
+						<p>Informazioni personali</p>
 					</a>
 				</li>
 				<li>

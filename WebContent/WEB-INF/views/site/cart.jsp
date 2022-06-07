@@ -15,8 +15,9 @@
 					<th></th>
 					<th>Nome</th>
 					<th>Prezzo</th>
+					<th>Sconto</th>
 					<th>Prezzo totale</th>
-					<th>Quantita</th>
+					<th>Quantita'</th>
 					<th>Azione</th>
 				</tr>
 			</thead>
@@ -30,7 +31,8 @@
 					</td>
 					<td class="is-size-4 has-text-weight-medium">${bean.getProduct().getName() }</td>
 					<td>&euro; <span id="price_${bean.getId()}">${bean.getProduct().getPriceToString()}</span></td>
-					<td>&euro; <span id="totalprice_${bean.getId()}">${bean.getTotalPriceToString()}</span></td>
+					<td ><span id="price_${bean.getId()}">${bean.getProduct().getDiscount()}%</span></td>
+					<td>&euro; <span id="totalprice_${bean.getId()}">${bean.getTotalPrice()}</span></td>
 					<td><input type="number" class="input" id="quantity_${bean.getId()}" name="quantity[]" min="1" value="${bean.getQuantity()}"></td>
 					<td>
 						<form action="Cart" method="post">

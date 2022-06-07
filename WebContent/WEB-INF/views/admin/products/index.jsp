@@ -4,7 +4,7 @@
 <link href="<c:url value="/resources/css/admin.css"/>" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Admin Product View">
 	<a href="<c:url value="/Admin/Products?action=create"/>">
-		<button type="submit" class="btn btn-primary mt-2">Add New Product</button>
+		<button type="submit" class="btn btn-primary mt-2">Aggiungi Prodotto</button>
 	</a>
 	<c:forEach items="${products}" var="prod">
 		<div class="admin-order">

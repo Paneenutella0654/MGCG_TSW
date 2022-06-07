@@ -377,7 +377,13 @@ textarea {
     color: #FFF;
     background-color: #abd26a;
     border-color: #abd26a;
-    margin-top:3rem;
+    margin-top:2rem;
+    float: right;
+  
+}
+
+.btn-success[value="cerca"]{
+	margin-top:-2rem;
 }
 
 .btn-primary {
@@ -698,7 +704,7 @@ nav li:hover a{
     background-color: #6AABD2;
     justify-content: space-between;
     align-items: stretch;
-    margin-top: 80px;
+    margin-top: 100px;
     
 }
 

@@ -3,7 +3,7 @@
 <link href="resources/css/user-profile.css" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Profile">
 
-	<h1 class="is-size-1 has-text-weight-semibold">Ciao! ${user.getFirstName()} </h1>
+	<h1 class="is-size-3">Ciao! ${user.getFirstName()} </h1>
 	<div class="user-profile">
 		<div class="user-profile-menu">
 			<ul>

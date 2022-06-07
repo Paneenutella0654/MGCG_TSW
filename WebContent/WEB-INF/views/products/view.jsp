@@ -44,6 +44,7 @@
 						<input type="hidden" name="action" value="add">
 						<input type="hidden" name="id" value="${prod.getId()}">
 						<button type="submit" class="button is-success" style="width:100%">Aggiungi al carrello</button>
+					
 					</form>
 					<c:if test="${user != null}">
 						<button class="button is-primary mt-2" onclick="openModal()">Recensione</button>
@@ -51,31 +52,8 @@
 				</div>
 			</div>
 		</div>
-		<hr>
-		<div class="additional-info">
-			<div class="reviews">
-				<c:forEach items="${prod.getReviewes()}" var="review"> 
-				<div id="review_${review.getId()}" class="single-review">
-					<div class="rev-title">
-						<span class="rev-score"><c:forEach var="i" begin="1" end="${review.getScore()}" ><i class="fa fa-star" style="color: #56BFBA"></i></c:forEach></span>
-						<h3 class="has-text-weight-bold">${review.getTitle()}</h3>
-					</div>
-					<div class="rev-text">
-						<div id="rev-body"><p>${review.getBody() }<p></div>
-						<div id="rev-user"><i class="fa fa-user ml-2 mt-2"> ${review.getUser().getEmail()}</i></div>
-						<div id="rev-actions"></div>
-					</div>
-					<c:if test="${review.getReply() != null}">
-						<hr>
-						<div class="rev-reply">
-							<em>MGCG replied:</em>
-							<p>${review.getReply() }</p>
-						</div>
-					</c:if>	
-				</div>
-				</c:forEach>
-			</div>
-		</div>
+		
+		
 		<div class="modal">
 		  <div class="modal-background"></div>
 		  <div class="modal-card">
@@ -107,6 +85,38 @@
 		  </div>
 		</div>
 	</div>
+	
+	
+	
+	<hr>
+	<div class="additional-info">
+			<div class="reviews">
+				<c:forEach items="${prod.getReviewes()}" var="review"> 
+				<div id="review_${review.getId()}" class="single-review">
+					<div class="rev-title">
+						<span class="rev-score"><c:forEach var="i" begin="1" end="${review.getScore()}" ><i class="fa fa-star" style="color: #56BFBA"></i></c:forEach></span>
+						<h3 class="has-text-weight-bold">${review.getTitle()}</h3>
+					</div>
+					<div class="rev-text">
+						<div id="rev-body"><p>${review.getBody() }<p></div>
+						<div id="rev-user"><i class="fa fa-user ml-2 mt-2"> ${review.getUser().getEmail()}</i></div>
+						<div id="rev-actions"></div>
+					</div>
+					<c:if test="${review.getReply() != null}">
+						<hr>
+						<div class="rev-reply">
+							<em>MGCG replied:</em>
+							<p>${review.getReply() }</p>
+						</div>
+					</c:if>	
+				</div>
+				</c:forEach>
+			</div>
+		</div>
+	
+	
+	
+	
 	<script>
 		function submitForm(){
 			$("#reviewForm").submit();

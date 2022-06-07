@@ -9,7 +9,7 @@
 	<button class="delete" onclick="closeNotification()">X</button>
 	<span id="notification-text">Test</span></div>
 	<div class="payment-title">
-        <h1>Informazioni Pagamento</h1>
+        <h1 class="is-size-4">Informazioni Pagamento</h1>
     </div>
     <div class="container preload">
         <div class="creditcard">
@@ -29,13 +29,13 @@
                         </g>
                         <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber" class="st2 st3 st4">0123 4567 8910 1112</text>
                         <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname" class="st2 st5 st6">JOHN DOE</text>
-                        <text transform="matrix(1 0 0 1 54.1074 389.8793)" class="st7 st5 st8">cardholder name</text>
-                        <text transform="matrix(1 0 0 1 479.7754 388.8793)" class="st7 st5 st8">expiration</text>
-                        <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">card number</text>
+                        <text transform="matrix(1 0 0 1 54.1074 389.8793)" class="st7 st5 st8">Intestatario carta</text>
+                        <text transform="matrix(1 0 0 1 479.7754 388.8793)" class="st7 st5 st8">Data scadenza</text>
+                        <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">Numero carta</text>
                         <g>
                             <text transform="matrix(1 0 0 1 574.4219 433.8095)" id="svgexpire" class="st2 st5 st9">01/23</text>
-                            <text transform="matrix(1 0 0 1 479.3848 417.0097)" class="st2 st10 st11">VALID</text>
-                            <text transform="matrix(1 0 0 1 479.3848 435.6762)" class="st2 st10 st11">THRU</text>
+                            <text transform="matrix(1 0 0 1 479.3848 417.0097)" class="st2 st10 st11">VALIDA</text>
+                            <text transform="matrix(1 0 0 1 479.3848 435.6762)" class="st2 st10 st11">FINO</text>
                             <polygon class="st2" points="554.5,421 540.4,414.2 540.4,427.9 		" />
                         </g>
                         <g id="cchip">
@@ -99,11 +99,11 @@
                         </g>
                         <text transform="matrix(1 0 0 1 621.999 227.2734)" id="svgsecurity" class="st6 st7">985</text>
                         <g class="st8">
-                            <text transform="matrix(1 0 0 1 518.083 280.0879)" class="st9 st6 st10">security code</text>
+                            <text transform="matrix(1 0 0 1 518.083 280.0879)" class="st9 st6 st10">CVV</text>
                         </g>
                         <rect x="58.1" y="378.6" class="st11" width="375.5" height="13.5" />
                         <rect x="58.1" y="405.6" class="st11" width="421.7" height="13.5" />
-                        <text transform="matrix(1 0 0 1 59.5073 228.6099)" id="svgnameback" class="st12 st13">John Doe</text>
+                        <text transform="matrix(1 0 0 1 59.5073 228.6099)" id="svgnameback" class="st12 st13"></text>
                     </g>
                 </svg>
             </div>
@@ -111,11 +111,11 @@
     </div>
     <div class="form-container">
         <div class="field-container">
-            <label for="name">Name</label>
+            <label for="name">Nome</label>
             <input id="name" maxlength="20" type="text">
         </div>
         <div class="field-container">
-            <label for="cardnumber">Card Number</label><span id="generatecard">generate random</span>
+            <label for="cardnumber">Numero carta</label><span id="generatecard">genera casualmente</span>
             <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
             <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -123,11 +123,11 @@
             </svg>
         </div>
         <div class="field-container">
-            <label for="expirationdate">Expiration (mm/yy)</label>
+            <label for="expirationdate">Data scadenza (mm/yy)</label>
             <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric">
         </div>
         <div class="field-container">
-            <label for="securitycode">Security Code</label>
+            <label for="securitycode">CVV</label>
             <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
         </div>
     </div>

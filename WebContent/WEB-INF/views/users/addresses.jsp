@@ -3,7 +3,7 @@
 <link href="resources/css/user-profile.css" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Profile">
 
-	<h1>Ciao! ${user.getFirstName()} </h1>
+	<h1 class="is-size-3">Ciao! ${user.getFirstName()} </h1>
 	<div class="user-profile">
 		<div class="user-profile-menu">
 			<ul>
@@ -31,7 +31,7 @@
 
 		<div class="right">
 			<div class="header">
-				<h3 class="title-left">Indirizzo</h3> <a href="User?action=createAddress"><i class="fa fa-plus-square fa-2x"></i></a>
+				<h3 class="title-left is-size-4">Indirizzo</h3> <a href="User?action=createAddress"><i class="fa fa-plus-square fa-2x"></i></a>
 			</div>
 			<div class="user-previous-orders">
 				<c:forEach items="${user.getAddresses()}" var="address">

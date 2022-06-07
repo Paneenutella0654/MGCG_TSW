@@ -1,7 +1,11 @@
 .products {
 	display: flex;
 	flex-flow: column;
+	    flex-flow: column;
+    align-content: stretch;
+    flex-direction: row;
 }
+
 
 .product {
 	display: flex;
@@ -46,6 +50,7 @@
 .product-action {
 	display: flex;
 	flex-flow: column;
+	width: 150px;
 }
 
 .rev-title {
@@ -64,11 +69,11 @@
 .button.is-fullwidth {
     display: flex;
     width: 100%;
-    background-color: #CC1E39 !important;
+    background-color: #CC1E39;
 }
 
 .button.is-danger.is-hovered, .button.is-danger:hover {
-    background-color: #f03a5f !important;
+    background-color: #f03a5f;
     border-color: transparent;
     color: #fff;
 }

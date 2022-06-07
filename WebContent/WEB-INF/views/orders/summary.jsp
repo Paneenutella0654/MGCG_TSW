@@ -4,7 +4,7 @@
 <link href="resources/css/summary.css" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Checkout">
 	<div id="notification" class="notification is-hidden"><button class="delete" onclick="closeNotification()">X</button><span id="notification-text">Test</span></div>
-	<h1>Riepilogo dell'ordine</h1>
+	<h1 class="is-size-4">Riepilogo dell'ordine</h1>
 	<div class="summary">
 		<div class="left">
 			<div class="address">
@@ -143,7 +143,7 @@
 					card += "						    "+ k.postalCode +" "+ k.city +" ("+ k.province +")";
 					card += "					    <\/div>";
 					card += "					    <div class=\"column\">";
-					card += "					    	<button id='address_"+k.id+"' class=\"button is-success\">Select<\/button>";
+					card += "					    	<button id='address_"+k.id+"' class=\"button is-success\">Seleziona<\/button>";
 					card += "					    <\/div>";
 					card += "					  <\/div>";
 					card += "					  <\/div>";

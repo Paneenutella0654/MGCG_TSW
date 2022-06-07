@@ -7,7 +7,7 @@
 	  <div class="control has-icons-left has-icons-right">
 	  	<div id="dropdownsearch" class="dropdown is-active">
 	  	  <div class="dropdown-trigger">
-	  	    <input id="search" name="search" class="input" type="text" placeholder="Search...">
+	  	    <input id="search" name="search" class="input" type="text" placeholder="Cerca...">
 	  	    <span class="icon is-small is-left">
 		      <i class="fas fa-search"></i>
 		    </span>

@@ -3,13 +3,13 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="<c:url value="/resources/css/admin.css"/>" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Admin Orders Manager">
-	<h1 class="mb-3">SearchOrders</h1>
+	<h1 class="mb-3 is-size-3"> Cerca Ordine</h1>
 	<div class="">
 		<form action="<c:url value="/Admin/Orders"/>" method="get">
 			<div class="row">
 				<div class="col">
 					<div class="form-group">
-						<label for="userId">User</label>
+						<label for="userId">Utente</label>
 						<select name="userId" id="userId" class="form-control" aria-label="Default select example">
 							<option value="0" selected></option>
 							<c:forEach items="${users}" var="user">
@@ -20,26 +20,26 @@
 				</div>
 				<div class="col">
 					<div class="form-group">
-						<label for="dateFrom">From</label>
+						<label for="dateFrom">Da</label>
 						<input type="date" class="form-control" name="dateFrom" id="dateFrom" aria-describedby="dateFromHelp">
 					</div>
 				</div>
 				<div class="col">
 					<div class="form-group">
-						<label for="dateTo">to</label>
+						<label for="dateTo">a</label>
 						<input type="date" class="form-control" name="dateTo" id="dateTo" aria-describedby="dateToHelp">
 					</div>
 				</div>
 			</div>
-			<button class="btn btn-success">Cerca</button>
+			<button value="cerca" class="btn btn-success">Cerca</button>
 		</form>
 	</div>
-	
+	<br>
 	<c:if test="${orders.size() == 0}">
-		<h1 class="mb-3">Ordine non trovato</h1>
+		<h1 class="is-size-1">Ordine non trovato</h1>
 	</c:if>
 	<c:if test="${orders.size() > 0}">
-		<h1 class="mb-3">Ordini</h1>
+	<h1 class="is-size-3">Ordini</h1>
 	</c:if>
 	
 	<c:forEach items="${orders}" var="order">
