@@ -43,7 +43,7 @@
 					<form action="Cart" method="post">
 						<input type="hidden" name="action" value="add">
 						<input type="hidden" name="id" value="${prod.getId()}">
-						<button type="submit" class="button is-success" style="width:100%">Aggiungi al carrello</button>
+						<button type="submit" class="button is-success" style="width:100%">Aggiungi</button>
 					
 					</form>
 					<c:if test="${user != null}">
@@ -165,7 +165,7 @@
 					dataType: "json",
 					success: function(data) {
 						closeModal();
-						$("#notification-text").text("Thanks for the review");
+						$("#notification-text").text("Grazie per la recensione");
 						$("#notification").addClass("is-success");
 						$("#notification").removeClass("is-hidden");
 					},
