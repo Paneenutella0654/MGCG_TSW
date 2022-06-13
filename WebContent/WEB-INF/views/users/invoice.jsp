@@ -48,10 +48,10 @@
 	                                        <p class="mb-0">${items.getName()}</p>
                                     </td>
                                     <td>${items.getQuantity()}</td>
-                                    <td>${items.getPriceString()}</td>
+                                    <td>${items.getPriceString()} &euro;</td>
 	                                <td>${items.getDiscountString()}</td>                             
                                     <td><span class="font-weight-semibold"> 
-                                    		${items.getPrice()*items.getQuantity()} </span></td>
+                                    		${items.getPrice()*items.getQuantity()} &euro;</span></td>
                                 </tr> 
                                </c:forEach>   
                                    
@@ -69,22 +69,28 @@
                                         <tbody>
                                             <tr>
                                                 <th class="text-left">Subtotal:</th>
-                                                <td class="text-right">${orderToShow.getTotalPaidString() }</td>                                               
+                                                <td class="text-right">${orderToShow.getTotalPaid()-orderToShow.getTotalPaid()*22/100} &euro;</td>                                               
+                                            </tr>
+                                            <tr>
+                                                <th class="text-left">Aliquota: <span class="font-weight-normal"></span></th>
+                                                <td class="text-right">22%</td>
                                             </tr>
                                             <tr>
                                                 <th class="text-left">Tasse: <span class="font-weight-normal"></span></th>
-                                                <td class="text-right">22%</td>
+                                                <td class="text-right">${orderToShow.getTotalPaid()*22/100} &euro;</td>
                                             </tr>
                                             <tr>
                                                 <th class="text-left">Totale:</th>
                                                 <td class="text-right text-primary">
-                                                    <h5 class="font-weight-semibold">${orderToShow.getTotalPaidString()}</h5>
+                                                    <h5 class="font-weight-semibold">${orderToShow.getTotalPaidString()} &euro;</h5>
                                                 </td>
                                             </tr>
                                              <tr>
-                                                <th class="text-left">MGCG Autoricambi</th>
+                                                <th class="text-left">Numero di Tracking:</th>
                                                 <td class="text-right text-primary">
-                                                    <h5 class="font-weight-semibold" id="track">${orderToShow.getTrackNumber()}</h5>
+                                                    <c:choose>
+                                                    	<h5 class="font-weight-semibold" id="track">${orderToShow.getTrackNumber()}</h5>
+                                                    </c:choose>
                                                 </td>
                                             </tr>
                                         </tbody>
