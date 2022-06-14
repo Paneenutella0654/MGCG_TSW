@@ -38,7 +38,7 @@
             <ul>
                 <li ${active.equals("Home") ? "class='active'": ""}><a href="<c:url value="/Home"/>">Home</a></li>
 				<li ${active.equals("Products") ? "class='active'": ""}><a href="<c:url value="/Products?action=search&searchVal=auto&active=Products"/>">Prodotti</a></li>
-                <li ${active.equals("Offerte") ? "class='active'": ""}><a href="<c:url value="/Products?action=search&searchVal=offerta&active=Products"/>">Offerte</a></li>
+                <li ${active.equals("Offerte") ? "class='active'": ""}><a href="<c:url value="/Products?action=search&searchVal=offerta&active=Offerte"/>">Offerte</a></li>
                 <li ${active.equals("Cart") ? "class='active'": ""}><a href="<c:url value="/Cart"/>">
                 	<i class="fa fa-shopping-bag fa-2x"></i>
                 	(<span id="cart-quantity">${cart == null ? 0:cart.getTotalProductsQuantity() }</span>)

@@ -55,7 +55,7 @@
     grid-template-columns: auto auto;
     grid-template-rows: 90px 90px 90px;
     grid-template-areas: "name name""number number""expiration security";
-    max-width: 400px;
+    max-width: 320px;
     color: #707070;
     float: right;
     margin-top: -250px;
@@ -91,7 +91,7 @@ input {
     -o-transition: none !important;
 }
 
-.container {
+.cocco {
     width: 100%;
     max-width: 400px;
     max-height: 251px;
@@ -319,7 +319,7 @@ input {
 }
 
 /* FLIP ANIMATION */
-.container {
+.cocco {
     perspective: 1000px;
 }
 
@@ -364,3 +364,12 @@ input {
     padding: 4px;
     border-radius: 9px;
 }
+
+@media (min-width: 830px)
+  body {
+    position: relative;
+    height: auto;
+    max-height: 100vh;
+}
+
+

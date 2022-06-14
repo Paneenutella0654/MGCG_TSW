@@ -11,7 +11,7 @@
 	<div class="payment-title">
         <h1 class="is-size-4">Informazioni Pagamento</h1>
     </div>
-    <div class="container preload">
+    <div class="cocco preload">
         <div class="creditcard">
             <div class="front">
                 <div id="ccsingle"></div>
