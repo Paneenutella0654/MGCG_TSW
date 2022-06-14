@@ -736,8 +736,15 @@ nav li:hover a{
     display: flex;
 }
 
-/* End Footer */
+.footer {
+position:absolute;
+bottom:-99s;
+left:0;
+width:100%;
+}
 
+
+/* End Footer */
 
 
 

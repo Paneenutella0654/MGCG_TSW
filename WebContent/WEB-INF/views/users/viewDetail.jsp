@@ -67,6 +67,10 @@
                                                 <th class="text-left">Subtotal:</th>
                                                 <td class="text-right">${orderToShow.getTotalPaid()-orderToShow.getTotalPaid()*22/100 }</td>                                               
                                             </tr>
+                                             <tr>
+                                                <th class="text-left">Aliquota: <span class="font-weight-normal"></span></th>
+                                                <td class="text-right">22%</td>
+                                            </tr>
                                             <tr>
                                                 <th class="text-left">Tasse: <span class="font-weight-normal"></span></th>
                                                 <td class="text-right">${orderToShow.getTotalPaid()*22/100 }</td>
