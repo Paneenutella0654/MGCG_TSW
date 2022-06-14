@@ -99,8 +99,9 @@ input.block {
 .login-header>img{
     max-width: 50%;
     border-radius: 30px;
-    background-color: white;
+    background-color: #f5f9f9;
 	margin-top:1rem;
+	padding: 8px;
 }
 
 .login-inner{
