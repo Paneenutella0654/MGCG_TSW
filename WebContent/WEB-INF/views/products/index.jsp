@@ -75,11 +75,14 @@
 	</div>
 	
 	<script>
+	 <!-- Script per il drop menu-->
 	$("#dropdownmenu").on("click", "a", function() {
 		$("#search").val(this.text);
 		$("#dropdownsearch").removeClass("is-active");
 	})
-
+	
+	 //Script per la ricerca
+	
 	var _changeSearch = null;
 	$(document).ready(function(e) {
 		$("#search").on("keyup", function(){
@@ -96,7 +99,7 @@
 						if(data.length > 0) {
 							data.forEach((e) => {
 								var myvar = '<div class="dropdown-content"><a class="dropdown-item" href="Products?action=search&searchVal='+ e.name + '">' + e.name + '</a></div>';
-								$("#dropdownmenu").append(myvar);
+								$("#dropdownmenu").append(myvar);   //Modifica del DOM
 							})
 							$("#dropdownsearch").addClass("is-active");
 						}
@@ -115,7 +118,7 @@
 	
 	
 	
-	
+	// Script per l'animazione dell tasto compra
 	$(".product-buy").on("click", function() {
 		var pid = this.id.split("_")[1];
 		var time;
@@ -145,6 +148,8 @@
 			});
 		});
 	});
+	
+	// Script per l'animazione dell tasto rimuovi
 	
 	$(".product-remove").on("click", function() {
 		var pid = this.id.split("_")[1];

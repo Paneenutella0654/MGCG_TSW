@@ -157,7 +157,6 @@ public class OrderDAO implements GenericDAO<Order> {
 					item.setShortDescription(rs.getString("shortDescription"));
 					item.setTax(rs.getInt("tax"));
 					item.setPrice(rs.getDouble("price"));
-					item.setWeight(rs.getDouble("weight"));
 					item.setDiscount(rs.getDouble("discount"));
 					item.setQuantity(rs.getInt("quantity"));
 					order.addItem(item);
@@ -196,7 +195,6 @@ public class OrderDAO implements GenericDAO<Order> {
 					stmt2.setString(3, item.getDescription());
 					stmt2.setString(4, item.getShortDescription());
 					stmt2.setDouble(5, item.getPrice());
-					stmt2.setDouble(6, item.getWeight());
 					stmt2.setDouble(7, item.getDiscount());
 					stmt2.setInt(8, item.getQuantity());
 					stmt2.setInt(9, item.getTax());
@@ -261,13 +259,11 @@ public class OrderDAO implements GenericDAO<Order> {
 				stmt2.setString(2, item.getDescription());
 				stmt2.setString(3, item.getShortDescription());
 				stmt2.setDouble(4, item.getPrice());
-				stmt2.setDouble(5, item.getWeight());
-				stmt2.setDouble(6, item.getDiscount());
-				stmt2.setInt(7, item.getQuantity());
-				stmt2.setInt(8, item.getTax());
-				
-				stmt2.setInt(9, item.getId());
-				stmt2.setInt(10, dao.getId());
+				stmt2.setDouble(5, item.getDiscount());
+				stmt2.setInt(6, item.getQuantity());
+				stmt2.setInt(7, item.getTax());
+				stmt2.setInt(8, item.getId());
+				stmt2.setInt(9, dao.getId());
 
 				stmt2.execute();
 			}

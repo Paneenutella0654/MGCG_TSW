@@ -76,7 +76,9 @@
 		
 	</form>
 	<script>
-
+	
+	<!-- Questo e uno script di convadila e di verifica del cap e numero di telefono -->
+	
 	function myfunction(frm) {
 		if(validatecap()) {
 			if(phonenumber()) {

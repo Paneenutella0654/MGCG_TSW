@@ -102,7 +102,7 @@
 			};
 			return !error;
 		});
-
+		// Script per la Visualizzazione dell calendario
 		$("#birthdayview").datepicker({
 			maxDate: "-10y",
 			minDate: "-110y",
@@ -130,7 +130,7 @@
 		}
 
 		function isValidName(name) {
-			return (name.match(/^[a-z ,.'-]+$/i) && name.length > 1  && name.length <= 30)
+			return (name.match(/^[a-z ,.'-]+$/i) && name.length > 1  && name.length <= 50)
 		}
 
 		function isValidDate(date) {

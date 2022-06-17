@@ -66,7 +66,7 @@
 	</div>
 	 
 <script>
-
+<!-- Indirizzamento alla fattura -->
 function target(id) {
 	let handle = window.open(popunder,"User?action=invoiceDownload&orderId="+id);
 	handle.blur();

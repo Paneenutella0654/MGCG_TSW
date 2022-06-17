@@ -118,6 +118,8 @@
 	
 	
 	<script>
+	
+		// Script per la gestione delle recensioni 
 		function submitForm(){
 			$("#reviewForm").submit();
 			$(".modal").removeClass("is-active");
@@ -133,23 +135,25 @@
 		function closeNotification() {
 			$("#notification").addClass("is-hidden");
 		}
+		// Script per le stellette delle recensioni 
 		
 		function starClicked(star){
 			var score = parseInt(star.id.split("-")[0]);
 			$("#score").val(score);
-			for(i = 1; i <= score; i++){
+			for(i = 1; i <= score; i++){  //ciclo che trasforma le stelletta da bianco a giallo aggiungendo e rimuovendo le oppurtune classi
 				$("#"+i+"-star").removeClass("has-text-white-ter")
 				$("#"+i+"-star").addClass("has-text-warning")
 			}
-			for(i = score + 1; i <=5; i++) {
+			for(i = score + 1; i <=5; i++) {    //ciclo che trasforma le stelletta da giallo a bianco aggiungendo e rimuovendo le oppurtune classi
 				$("#"+i+"-star").removeClass("has-text-warning")
 				$("#"+i+"-star").addClass("has-text-white-ter")
 			}
 		}
 		
+		
+		// Script pre le recenzioni
+		
 		$(document).ready(function() {
-			
-			
 			let c;
 			$("#reviewSubmit").click(function() {
 				var pid = $("#pid").val();
@@ -165,7 +169,7 @@
 					dataType: "json",
 					success: function(data) {
 						closeModal();
-						$("#notification-text").text("Grazie per la recensione");
+						$("#notification-text").text("Grazie per la recensione");  //Modifica al DOM
 						$("#notification").addClass("is-success");
 						$("#notification").removeClass("is-hidden");
 					},
@@ -184,34 +188,6 @@
 				});
 			});
 
-		});
-		
-
-		/*
-		Zoom(".images-big", {
-	    originalizer: (src) => src.replace(/-[0-9]+\.jpg/, ".jpg"),
-	    background: "auto",
-		});	
-		*/
-		$(document).ready(function(){
-			$('#big-img').okzoom({
-				  width: 250,  
-				  height: 250,  
-				  round: true,
-				  background: "#fff",
-				  //backgroundRepeat: "repeat",
-				  shadow: "0 0 5px #000",
-				  border: "1px solid black"
-				});			
-		})
-		  
- 		function onHover(id) { 
-			var imgBig = document.getElementById("big-img").getAttribute('src');
-			imgBig.src = "https://www.pcprofessionale.it/wp-content/uploads/2018/12/Colori-negativi.jpg";
-		}
-		    
-			  
-		
-		
+		});		
 	</script>
 </z:layout>

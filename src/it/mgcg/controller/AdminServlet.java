@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class AdminServlet
+ * Servlet implementa classe AdminServlet
  */
 @WebServlet("/Admin")
 public class AdminServlet extends HttpServlet {

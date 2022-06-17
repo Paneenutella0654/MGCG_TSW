@@ -10,7 +10,6 @@ public class OrderItem {
 	private String shortDescription;
 	private int tax;
 	private double price;
-	private double weight;  //TODO elimiatre la voce ed aggiornare 
 	private double discount;
 	private int quantity;
 	private LocalDateTime createdAt;
@@ -82,14 +81,6 @@ public class OrderItem {
 
 	public void setPrice(double price) {
 		this.price = price;
-	}
-
-	public double getWeight() {
-		return weight;
-	}
-
-	public void setWeight(double weight) {
-		this.weight = weight;
 	}
 
 	public double getDiscount() {

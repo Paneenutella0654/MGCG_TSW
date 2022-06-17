@@ -105,6 +105,7 @@
 	</form>
 	
 	<script>
+	// Script per il cambio di indirizzo
 	
 		$("#save").change(function() {
 		    if(this.checked) {
