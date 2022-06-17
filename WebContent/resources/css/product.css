@@ -28,7 +28,7 @@ html, body {
   transform: scale(0.95);
   transition: box-shadow 0.5s, transform 0.5s;
 }
-.product-wrapper:hover {
+.product-wrapper:hover {   /*Qua c'e il css per far si che qunado passo sopra l'immagine si ingrandisca tutta la carta (infatti c'e hover) */
   transform: scale(1);
   box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
 }

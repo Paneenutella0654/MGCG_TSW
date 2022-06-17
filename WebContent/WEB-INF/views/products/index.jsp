@@ -75,7 +75,7 @@
 	</div>
 	
 	<script>
-	 <!-- Script per il drop menu-->
+	 <!-- Script per rimuovere la classe dalla barra di ricerca-->
 	$("#dropdownmenu").on("click", "a", function() {
 		$("#search").val(this.text);
 		$("#dropdownsearch").removeClass("is-active");
@@ -94,7 +94,7 @@
 				//var suggestions = JSON.parse('[{"name": "Lorem"},{"name": "eu"},{"name": "non"},{"name": "ullamco"},{"name": "duis"},{"name": "consequat"},{"name": "enim"},{"name": "dolore"},{"name": "esse"},{"name": "Lorem"},{"name": "commodo"},{"name": "et"},{"name": "laboris"},{"name": "magna"},{"name": "labore"}]');
 				var textToSearch = $("#search").val();
 				if(textToSearch.length > 3) {
-					$.get("Api/Products", { action: "search", val: textToSearch }, function(data) {
+					$.get("Api/Products", { action: "search", val: textToSearch }, function(data) {    // il $.get(...) e una chimata di Ajax
 						$("#dropdownmenu").empty();
 						if(data.length > 0) {
 							data.forEach((e) => {
@@ -109,8 +109,10 @@
 		    }, 1000);
 		});
 		
+		//Script per quando si preme invio che manda in esecuzione la ricerca
+		
 		$("#search").on('keypress',function(e) {
-		    if(e.which == 13) {
+		    if(e.which == 13) {  //Viene Uguagiato al 13 poiche 13 "dovresse essere la corrispondenza del tasto invio"
 		    	location.href = 'Products?action=search&searchVal=' + $("#search").val()
 		    }
 		});
