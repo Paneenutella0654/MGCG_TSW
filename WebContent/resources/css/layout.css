@@ -283,19 +283,6 @@ textarea {
 	padding: 0px 25px;
 }
 
-/*
-.control {
-    width: 100%;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #FFF;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.35em;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15 ease-in-out;
-    box-sizing: border-box;
-}*/
-
 .bordered {
     margin-left: 0;
     margin-right: 0;
@@ -427,25 +414,10 @@ a {
 	text-decoration: none;
 }
 
-a:link{
-/* 	color: #006C7B; */
-}
-
 a:hover{
 	font-weight: 600;
 	cursor: pointer;	
  	color: #363636 !important;
-}
-
-a:active{
-/* 	color: #529A89 ; */
-}
-
-a:visited {
-/* 	color: #529A89 ; */
-}
-a:after {
-/* 	color: #529A89 ; */
 }
 
 /* default

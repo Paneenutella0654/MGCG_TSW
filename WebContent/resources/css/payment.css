@@ -83,7 +83,7 @@ input {
     width: 60px;
 }
 
-/* CREDIT CARD IMAGE STYLING */
+/* stile dell'immagine della carta di credito */
 .preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -130,7 +130,7 @@ input {
     float:right;
 }
 
-/* CHANGEABLE CARD ELEMENTS */
+/* Cambiamento degli elementi della carta */
 .creditcard .lightcolor,
 .creditcard .darkcolor {
     -webkit-transition: fill .5s;
@@ -262,7 +262,7 @@ input {
     fill: #4C4C4C;
 }
 
-/* BACK OF CARD */
+/* Parte di dietro della carta */
 #cardback .st0 {
     fill: none;
     stroke: #0F0F0F;
