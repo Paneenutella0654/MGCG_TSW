@@ -171,8 +171,8 @@ public class OrderDAO implements GenericDAO<Order> {
 		String insertOrder = "INSERT INTO orders (`uid`, `destination`, `totalProducts`, `totalPaid`, `trackNumber`, `gift`, `giftMessage`) "
 				+ "VALUES (?, ?, ?, ?, ?, ?, ?)";
 		String insertItem = "INSERT INTO order_items "
-				+ "(`oid`, `name`, `description`, `shortDescription`, `price`, `weight`, `discount`, `quantity`, `tax`) "
-				+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+				+ "(`oid`, `name`, `description`, `shortDescription`, `price`, `discount`, `quantity`, `tax`) "
+				+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 		var conn = ds.getConnection();
 		try (var stmt = conn.prepareStatement(insertOrder, Statement.RETURN_GENERATED_KEYS)) {
 			stmt.setInt(1, dao.getUser().getId());
@@ -195,9 +195,9 @@ public class OrderDAO implements GenericDAO<Order> {
 					stmt2.setString(3, item.getDescription());
 					stmt2.setString(4, item.getShortDescription());
 					stmt2.setDouble(5, item.getPrice());
-					stmt2.setDouble(7, item.getDiscount());
-					stmt2.setInt(8, item.getQuantity());
-					stmt2.setInt(9, item.getTax());
+					stmt2.setDouble(6, item.getDiscount());
+					stmt2.setInt(7, item.getQuantity());
+					stmt2.setInt(8, item.getTax());
 					stmt2.execute();
 				}
 			}
