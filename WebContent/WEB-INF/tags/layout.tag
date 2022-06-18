@@ -64,16 +64,17 @@
 	</main>
 	
 	<script>
-	// When the user scrolls the page, execute myFunction
+	//Quando l'utente scorre la pagina, eseguire myFunction
 	window.onscroll = function() {myFunction()};
 
-	// Get the navbar
+	// Prendi la barra di navigazione
 	var navbar = document.getElementById("navbar");
 
-	// Get the offset position of the navbar
+	// Ottieni la posizione di offset della barra di navigazione
 	var sticky = navbar.offsetTop;
 
-	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	/* Aggiungi la classe sticky alla barra di navigazione quando raggiungi la sua posizione
+	di scorrimento. Rimuovi sticky quando esci dalla posizione di scorrimento*/
 	function myFunction() {
 	  if (window.pageYOffset >= sticky) {
 	    navbar.classList.add("sticky")
@@ -82,7 +83,7 @@
 	  }
 	}
 	</script>
-	<!-- Footer colors #2e2e2e   and #252525  -->
+	<!-- Footer colors  -->
 	<div class="footer">
 		<div class=footer-left>
 			<a href="#facebook"><i class="fa fa-facebook fa-2x"></i></a>

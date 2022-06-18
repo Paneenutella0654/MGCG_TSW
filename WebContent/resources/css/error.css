@@ -41,8 +41,6 @@
 	
 }
 
-
-
 .error{
     width: 100%;
     text-align: center;
@@ -66,10 +64,6 @@
 	font-size: 252px;
 }
 
-
-
-
-
 .object_face_rocket{
     z-index: 95;
     position: absolute;
@@ -79,8 +73,6 @@
     animation: rocket-movement 100s linear infinite both running;
 }
 
-
-
 .box_face{
     z-index: 110 !important;
     position: absolute;
@@ -89,9 +81,6 @@
     will-change: transform;
     animation: move-face 50s infinite linear both alternate;
 }
-
-
-
 
 
 
