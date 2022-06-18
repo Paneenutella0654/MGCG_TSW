@@ -7,8 +7,7 @@ import java.util.*;
 public class NotFoundException extends Exception {
 
    /**
-    * Constructor for NotFoundException. The input message is
-    * returned in toString() message.
+    * Costuttore per NotFoundException. Riceviamo un messaggio di errore ed lo sciviamo e mostaimo a schermo
     */
     public NotFoundException(String msg) {
            super(msg);

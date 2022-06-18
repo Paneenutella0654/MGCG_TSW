@@ -45,7 +45,7 @@ public class OrderServlet extends HttpServlet {
 
 		if (action != null) {
 			if (action.equals("view")) {
-				// view detail order
+				// Dettagli ordini
 			} else if (action.equals("checkout")){
 				if(cart == null || ((Cart)cart).getTotalProductsQuantity() <= 0) {
 					response.sendError(500);

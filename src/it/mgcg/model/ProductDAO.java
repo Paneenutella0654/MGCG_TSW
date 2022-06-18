@@ -125,7 +125,7 @@ public class ProductDAO implements GenericDAO<Product> {
 		return bean;
 	}
 
-	// Create or insert user
+	// Salvataggio nel Databese
 	
 	//Il path dell immggine viene inserito solo attraverso l'accesso tramite mysql
 	@Override

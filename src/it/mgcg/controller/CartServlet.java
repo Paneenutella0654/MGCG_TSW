@@ -54,8 +54,7 @@ public class CartServlet extends HttpServlet {
 			cart = new Cart();
 			request.getSession().setAttribute("cart", cart);
 		}
-		// push product in cart
-		// show cart page
+		// Ridirezionamento alla pagina
 		RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/WEB-INF/views/site/cart.jsp");
 		dispatcher.forward(request, response);
 
@@ -67,15 +66,16 @@ public class CartServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// Check action
+		// Gestione del carrello se e nullo viene creato ed inizializzato
 		Cart cart = (Cart) request.getSession().getAttribute("cart");
 		if (cart == null) {
 			cart = new Cart();
 			request.getSession().setAttribute("cart", cart);
 		}
 
+		//Controllo delle possibili azioni
+		
 		String action = request.getParameter("action");
-		// If action == add
 		try {
 			if (action != null) {
 				if (action.equals("add")) {
