@@ -88,9 +88,7 @@
                                              <tr>
                                                 <th class="text-left">Numero di Tracking:</th>
                                                 <td class="text-right text-primary">
-                                                    <c:choose>
                                                     	<h5 class="font-weight-semibold" id="track">${orderToShow.getTrackNumber()}</h5>
-                                                    </c:choose>
                                                 </td>
                                             </tr>
                                         </tbody>
