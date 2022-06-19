@@ -23,26 +23,27 @@
                 placeholder="Inserisci la tua password" min="8" required>
             <input type="hidden" name="action" value="login">
         </div>
-
+			<div class="errors">
+        		<ul>
+        		<c:forEach items="${errors}" var="err">
+            		<li>${err}</li>
+        		</c:forEach>
+        		</ul>
+    		</div>
+    
          <div class="login-buttons">
         <input type="submit" value="Login"/>
         <input type="reset" value="Reset"/>
       </div>
     </form>
- 
+
     <form action="Login" method="get">
-        <div class="login-buttons">
+        <div class="register-buttons">
             <input type="hidden" name="action" value="register">
             <p>Sei un nuovo utente?</p>
             <button type="submit" class="btn btn-success mt-2">Registarti ora!</button>
         </div>
     </form>
     </div>
-    <div class="errors">
-        <ul>
-        <c:forEach items="${errors}" var="err">
-            <li>${err}</li>
-        </c:forEach>
-        </ul>
-    </div>
+  
 </z:layout>

@@ -112,7 +112,7 @@ public class LoginServlet extends HttpServlet {
 				}
 				if (user == null || !user.getPassword().equals(request.getParameter("password"))) {
 					request.getSession().removeAttribute("user");
-					request.setAttribute("errors", new ArrayList<String>() {{add("User not found or password error");}});
+					request.setAttribute("errors", new ArrayList<String>() {{add("Utente o Password errati");}});
 					RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/login/login.jsp");
 					dispatcher.forward(request, response);
 					return;
