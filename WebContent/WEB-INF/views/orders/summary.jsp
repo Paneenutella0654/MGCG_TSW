@@ -122,7 +122,7 @@
 		$("#notification").addClass("is-hidden");
 	}
 	
-	//Script per aggiungere l'indirizzo quando siamo concludendo l'ordine
+	//Script per aggiungere l'indirizzo quando stiamo concludendo l'ordine
 	$(document).ready(function() {
 		$('#btn-addressModal').on("click", function (){
 			$.get("Api/User", { action:"getAddresses" }, function(data) {

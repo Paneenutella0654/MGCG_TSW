@@ -7,6 +7,9 @@
 	/*var(--colore)*/
 }
 
+html{
+	background-color: #f5f9f9!important;
+}
 *{
     margin:0;
     padding:0;
@@ -677,7 +680,7 @@ nav li:hover a{
     background-color: #6AABD2;
     justify-content: space-between;
     align-items: stretch;
-    margin-top: 100px;
+    margin-top: 10%;
     
 }
 
@@ -710,8 +713,7 @@ nav li:hover a{
 }
 
 .footer {
-position:absolute;
-bottom:-99s;
+position: sticky;
 left:0;
 width:100%;
 }
