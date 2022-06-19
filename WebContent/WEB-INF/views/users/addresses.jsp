@@ -60,7 +60,7 @@
 									<li><a class="links" href="User?action=editAddress&id=${address.getId()}">Modifica Indirizzo</a></li>
 									<c:if test="${!address.isPreferred()}">
 										<li class="mt-4">
-											<form action="User" method="post">
+											<form action="User" method="post">  <!-- Il settaggio del indirizzo preferito avviene atraverso la servlet del user ed quindi tramite database -->
 												<input type="hidden" name="action" value="setPreferredAddress">
 												<input type="hidden" name="id" value="${address.getId()}">
 												<button type="submit" class="links btn-info">Setta un preferito</button>

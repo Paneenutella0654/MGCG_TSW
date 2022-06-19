@@ -67,8 +67,7 @@
 	
 	
 	<script>
-	 <!--  Lo Srcipt serve ad aggionore la quantita nel carrello nella fattispecie nella funzione "event"
-	 che andra a lavorare tramite il broswer e non tramite il server-->
+	 <!--  Lo Srcipt serve ad aggionore la quantita nel carrello nella fattispecie nella funzione "event" che andra a lavorare tramite il broswer e non tramite il server-->
 		let defaultQuantity = new Map();
 		$(document).ready(function() {
 			$("[name^=quantity]").each(function() {

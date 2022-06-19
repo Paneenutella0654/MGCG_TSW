@@ -16,16 +16,6 @@
 	<div class="products">
 		<div class="product">
 			<div class="left">
-				<div class="images-small">
-						<figure class="image is-square is-96x96 border-img">
-							<img src="/MGCG/resources/images/products/${prod.getId()}.jpg"
-							   onclick="onClick(document.getElementById('big-img').src=this.src) " 
-							   onmouseover="onHover(document.getElementById('big-img').src=this.src)"
-							>
-						 </figure> 
-
-					
-				</div> 
 				<div class="images-big">
 					<img id="big-img" src="/MGCG/resources/images/products/${prod.getId()}.jpg">
 				</div>
