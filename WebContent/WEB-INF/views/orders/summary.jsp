@@ -4,7 +4,7 @@
 <link href="resources/css/summary.css" rel="stylesheet" type="text/css">
 <z:layout pageTitle="Checkout">
 	<div id="notification" class="notification is-hidden"><button class="delete" onclick="closeNotification()">X</button><span id="notification-text">Test</span></div>
-	<h1 class="is-size-4">Riepilogo dell'ordine</h1>
+	<h1 class="is-size-3">Riepilogo dell'ordine</h1>
 	<div class="summary">
 		<div class="left">
 			<div class="address">

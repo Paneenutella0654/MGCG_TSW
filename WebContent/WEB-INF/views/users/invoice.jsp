@@ -108,8 +108,8 @@
 
 <script type="text/javascript">
 
- <!-- Script che serve a scaricare la fattura, noi andiamo solo a considerare il click del bottone 
- invece per la creazione del pdf viene gestita tramite libreria -->
+ <!-- Script che serve a scaricare la fattura, noi andiamo solo a considerare il click del bottone invece per la creazione del pdf viene gestita tramite libreria -->
+ 
  
 $(window).on("load" , function () {
 	if($("#pdf").val() == "download" ){
