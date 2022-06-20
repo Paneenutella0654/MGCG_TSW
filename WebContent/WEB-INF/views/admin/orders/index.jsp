@@ -10,7 +10,7 @@
 				<div class="col">
 					<div class="form-group">
 						<label for="userId">Utente</label>
-						<select name="userId" id="userId" class="form-control" aria-label="Default select example">
+						<select name="userId" id="userId" class="form-control" aria-label="Esempio di selezione predefinita">
 							<option value="0" selected></option>
 							<c:forEach items="${users}" var="user">
 							<option value="${user.getId()}">${user.getEmail()}</option>
