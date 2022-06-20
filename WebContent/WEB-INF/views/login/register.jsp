@@ -98,7 +98,7 @@
 				error = true;
 				$("#notification").removeClass("is-hidden");
 				$("#notification-text").empty()
-				$("#notification-text").text("Account already exists for this email");
+				$("#notification-text").text("A questa email e gia associato un account ");
 			};
 			return !error;
 		});

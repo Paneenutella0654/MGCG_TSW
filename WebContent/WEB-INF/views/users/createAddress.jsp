@@ -60,7 +60,7 @@
 		<div class="form-check mb-3">
 			<input class="form-check-input" type="checkbox" value="" name="preferred" id="preferred">
 			<label class="form-check-label" for="preferred">
-				Preferenza
+				Preferito
 			</label>
 		</div>
 		

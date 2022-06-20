@@ -31,7 +31,7 @@
 					</div>
 				</div>
 			</div>
-			<button value="cerca" class="btn btn-success">Cerca</button>
+			<button class="btn btn-success">Cerca</button>
 		</form>
 	</div>
 	<br>

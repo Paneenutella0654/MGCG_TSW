@@ -5,7 +5,7 @@
 
   
   <p>ID ORDINE         		:<b>${bean.getId()}</b> <p> 
-  <p>User  ID         		:<b>${bean.getUser()}</b> </p>
+  <p>User  ID         		:<b>${bean.getUser().getId()}</b> </p>
   <p>Destinazione     		:<b>${bean.getDestination()}</b> </p>
   <p>Totale Prodotti   		:<b>${bean.getTotalProducts()}</b> </p>
   <p>Total Pagato      		:<b>${bean.getTotalPaid()}</b> </p>
