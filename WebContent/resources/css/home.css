@@ -34,6 +34,7 @@ img {
     color: rgb(0,0,0) !important;
     font-family: abeatbyKai;
     font-size: 30px;
+    font-family: "Poppins", sans-serif;
 }
 
 .img-responsive{
@@ -77,4 +78,5 @@ video{
 #store{
 	max-width:100% ;
 	max-height:400% !important;
+	margin-top: 2% !important;
 }
