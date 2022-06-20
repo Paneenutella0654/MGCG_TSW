@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link href="<c:url value="/resources/css/layout.css"/>" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="./resources/images/shortcuticon.ico">
 	<title>${pageTitle}</title>
 </head> 
 
